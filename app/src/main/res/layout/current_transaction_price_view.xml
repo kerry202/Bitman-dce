@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/kine_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/current_price_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginTop="@dimen/d20"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/yellow5"
+            android:textSize="@dimen/d40"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_current_rnb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_toRightOf="@+id/tv_current_price"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d28" />
+
+        <TextView
+            android:id="@+id/tv_current_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_marginRight="@dimen/d30"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/kline_current_price"
+            android:textSize="@dimen/d34" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_price_container"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d30"
+        android:paddingTop="@dimen/d10"
+        android:paddingRight="@dimen/d30"
+        android:paddingBottom="@dimen/d10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volume_24H"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/d22" />
+
+                <TextView
+                    android:id="@+id/tv_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="1111"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d22" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d12"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/limit_24H"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/d22" />
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d02"
+                    android:text="1111"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d22" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_low_high"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_24H"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/d22" />
+
+                <TextView
+                    android:id="@+id/tv_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="1111"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d22" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d12"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/low_24H"
+                    android:textColor="@color/c4"
+                    android:textSize="@dimen/d22" />
+
+                <TextView
+                    android:id="@+id/tv_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="1111"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/d22" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

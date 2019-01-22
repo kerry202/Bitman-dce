@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp44"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dp14"
+        android:layout_height="@dimen/dp14"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp16"
+        android:src="@mipmap/home_search_icon" />
+
+    <EditText
+        android:textColorHint="@color/df_999999"
+        android:hint="@string/home_hint_search"
+        android:maxLength="10"
+        android:textSize="@dimen/dp13"
+        android:lines="1"
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/dp50"
+        android:background="@null"
+        android:textColor="@color/df_080404" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingRight="@dimen/dp16"
+        android:text="@string/cancel"
+        android:textColor="@color/df_gray_666"
+        android:textSize="@dimen/dp13" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_bg" />
+
+</RelativeLayout>

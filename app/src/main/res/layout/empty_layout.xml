@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory">
+
+    <LinearLayout
+        android:id="@+id/lin_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_load"
+            android:layout_width="@dimen/dp74"
+            android:layout_height="@dimen/dp74"
+            android:src="@mipmap/no_data_icon" />
+
+        <TextView
+            android:id="@+id/tv_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp14"
+            android:text="@string/no_data"
+            android:textColor="@color/text_str"
+            android:textSize="@dimen/dp14" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d20"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/http_clickretry"
+            android:textColor="@color/df_font_gray"
+            android:textSize="@dimen/d26" />
+
+    </LinearLayout>
+
+</FrameLayout>

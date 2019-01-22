@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg">
+
+    <cn.dagongniu.bitman.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commontoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/lib_white_circle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/nationality_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginRight="@dimen/dp16"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/nationality"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_countrycode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp34"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp80"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/lib_white_circle">
+
+                            <TextView
+                                android:id="@+id/tv_countrycode_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp34"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:gravity="center_vertical"
+                                android:text="@string/china"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                            <ImageView
+                                android:layout_width="@dimen/d16"
+                                android:layout_height="@dimen/d24"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dp10"
+                                android:src="@drawable/xiangyou_cion" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/real_name_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp34"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp16">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="7dp"
+                            android:text="@string/real_name"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp34"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp80"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/gray_bg_f8f8f8">
+
+                            <EditText
+                                android:id="@+id/tv_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp34"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:background="@null"
+                                android:hint="@string/real_name2"
+                                android:singleLine="true"
+                                android:textSize="@dimen/d28" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/certificate_type_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp34"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp16">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp34"
+                            android:gravity="center_vertical"
+                            android:text="@string/certificate_type"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_certificate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp34"
+                            android:layout_marginLeft="@dimen/dp80"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:background="@drawable/lib_white_circle"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_certificate_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:text="@string/crad"
+                                android:textColor="@color/df_font"
+                                android:textSize="@dimen/d28" />
+
+                            <ImageView
+                                android:layout_width="@dimen/d16"
+                                android:layout_height="@dimen/d24"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/dp10"
+                                android:src="@drawable/xiangyou_cion" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/certificate_number_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp16">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/certificate_number"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d28" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp34"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp80"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@drawable/gray_bg_f8f8f8">
+
+                            <EditText
+                                android:id="@+id/tv_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:background="@null"
+                                android:digits="@string/filter_vcode"
+                                android:hint="@string/input_certificate_number"
+                                android:inputType="text"
+                                android:maxLength="18"
+                                android:singleLine="true"
+                                android:textSize="@dimen/d28" />
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_Identity_Recognition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/certificate_number_container"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="@string/Identity_Recognition"
+                        android:textColor="@color/text_str"
+                        android:textSize="@dimen/d28" />
+
+
+                    <LinearLayout
+                        android:id="@+id/photo_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingLeft="@dimen/dp16"
+                        android:paddingRight="@dimen/dp16">
+
+                        <LinearLayout
+                            android:id="@+id/full_face_container"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/im_full_face_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp108"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/reversel_face_photo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/full_face_photo"
+                                android:textColor="@color/text_str"
+                                android:textSize="@dimen/d28" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/reverse_face_container"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/im_reverse_face_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp108"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/full_face_photo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/d70"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/reverse_face_photo"
+                                android:textColor="@color/text_str"
+                                android:textSize="@dimen/d28" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp15" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photo_container"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/d06"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:text="@string/identity_authentication_reminder"
+                android:textColor="@color/df_999999"
+                android:textSize="@dimen/d24" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp60" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/noclick_circle_gray"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/text_str"
+        android:textSize="@dimen/dp16" />
+    
+</RelativeLayout>

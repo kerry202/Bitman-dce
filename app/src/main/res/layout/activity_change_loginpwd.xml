@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <cn.dagongniu.bitman.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:background="@drawable/lib_white_circle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp34"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp32"
+                android:layout_marginRight="@dimen/dp15">
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/old_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/dp13" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp34"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@drawable/gray_bg_f8f8f8">
+
+                    <EditText
+                        android:id="@+id/old_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp34"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:digits="@string/filter_vcode"
+                        android:hint="@string/old_setpwd_lin_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/df_333333"
+                        android:textColorHint="@color/df_999999"
+                        android:textSize="@dimen/d26" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp34"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp15">
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/new_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp34"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@drawable/gray_bg_f8f8f8">
+
+                    <EditText
+                        android:id="@+id/new_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp34"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:digits="@string/filter_vcode"
+                        android:hint="@string/setpwd_lin_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/df_333333"
+                        android:textColorHint="@color/df_999999"
+                        android:textSize="@dimen/d26" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp34"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp15">
+
+                <TextView
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/confirmed_new_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d26" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp34"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@drawable/gray_bg_f8f8f8">
+
+                    <EditText
+                        android:id="@+id/confirmed_new_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp34"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@null"
+                        android:digits="@string/filter_vcode"
+                        android:hint="@string/repeat_setpwd_lin_hint"
+                        android:inputType="textPassword"
+                        android:textColor="@color/df_333333"
+                        android:textColorHint="@color/df_999999"
+                        android:textSize="@dimen/d26" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginRight="@dimen/d30"
+        android:background="@drawable/noclick_circle_gray"
+        android:gravity="center"
+        android:text="@string/dialog_commit"
+        android:textColor="@color/text_str"
+        android:textSize="@dimen/dp16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginBottom="@dimen/d30"
+        android:gravity="left"
+        android:text="@string/change_pwd_remind"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/dp14" />
+</LinearLayout>

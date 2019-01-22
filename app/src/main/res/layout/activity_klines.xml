@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kline_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <cn.dagongniu.bitman.kline.view.KLineToolbar
+        android:id="@+id/kline_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/kine_bg" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kline_toolbar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <cn.dagongniu.bitman.kline.view.CurrentTransactionPriceView
+                android:id="@+id/current_transaction_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/kine_bg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_time_select_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d90"
+                android:layout_below="@+id/current_transaction_price"
+                android:background="@color/minute_black"
+                android:gravity="center_vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d90"
+                    android:layout_marginRight="@dimen/d100">
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_minute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <cn.dagongniu.bitman.kline.view.KLineTabView
+                            android:id="@+id/tab_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:gravity="center"
+                            app:kline_tab_name="@string/kline_minute" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_minutes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <cn.dagongniu.bitman.kline.view.KLineTabView
+                            android:id="@+id/tab_minutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:gravity="center"
+                            app:kline_tab_name="@string/kline_minutes"
+                            app:kline_tab_select="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_hour"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+
+                        <cn.dagongniu.bitman.kline.view.KLineTabView
+                            android:id="@+id/tab_hour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:gravity="center"
+                            app:kline_tab_name="@string/hour" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_day"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+
+                        <cn.dagongniu.bitman.kline.view.KLineTabView
+                            android:id="@+id/tab_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:gravity="center"
+                            app:kline_tab_name="@string/kline_daily_line" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_tab_mouth"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+
+                        <cn.dagongniu.bitman.kline.view.KLineTabView
+                            android:id="@+id/tab_mouth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:gravity="center"
+                            app:kline_tab_name="@string/kline_month_line" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/full_screen"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@mipmap/kline_full_screen"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/combinedchart_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp250"
+                android:layout_below="@+id/rl_time_select_container"
+                android:background="@color/minute_black"
+                android:orientation="vertical">
+
+                <cn.dagongniu.bitman.kline.kchart.MyCombinedChart
+                    android:id="@+id/combinedchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <cn.dagongniu.bitman.kline.kchart.MyCombinedChart
+                    android:id="@+id/barchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <cn.dagongniu.bitman.kline.view.CurrentItemInfoView
+                android:id="@+id/currentiteminfoview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_transaction_price"
+                android:background="#2F373D"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/combinedchart_container"
+                android:layout_marginBottom="@dimen/dp44"
+                android:background="#222A34"
+                android:orientation="vertical">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/kline_tab_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp44"
+                    android:background="#222A34" />
+
+                <cn.dagongniu.bitman.customview.CustomViewPager
+                    android:id="@+id/main_market_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#222A34" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:layout_alignParentBottom="true"
+        android:background="#2F373D"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp36"
+            android:background="@drawable/bule_circle"
+            android:gravity="center"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp17" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp36"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_toRightOf="@+id/tv_buy"
+            android:background="@drawable/yellow_circle2"
+            android:gravity="center"
+            android:text="@string/sell"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp17" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

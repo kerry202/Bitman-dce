@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:layout_marginTop="@dimen/dp15"
+    android:background="@drawable/lib_white_circle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp19"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:lines="2"
+        android:text="#"
+        android:textColor="@color/text_str"
+        android:textSize="@dimen/dp15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp15">
+
+        <TextView
+            android:id="@+id/ann_tv_fbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/publisher"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp12" />
+
+
+        <TextView
+            android:id="@+id/tv_releasetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="2018-15-45"
+            android:textColor="@color/df_gray_666"
+            android:textSize="@dimen/dp12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

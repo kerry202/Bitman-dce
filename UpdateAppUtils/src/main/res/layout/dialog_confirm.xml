@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/lib_white_circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#999"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line_v"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="158dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="151dp"
+        android:background="@drawable/lib_gray_circle">
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="230dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/lib_white_circle"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dialog_confirm_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/map_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="91dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/update_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/version_updating"
+                android:textColor="@color/text_app_ignore"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialog_confirm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/find_updating"
+                android:textColor="#999"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="248dp"
+        android:src="@mipmap/x_sj_icon" />
+
+    <Button
+        android:id="@+id/dialog_confirm_sure"
+        android:layout_width="180dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/lib_gray5_circle"
+        android:text="@string/start_install"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+</FrameLayout>

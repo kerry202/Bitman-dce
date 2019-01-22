@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tencent.wcdb:wcdb-android-1.0.8">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wcdb-android-1.0.8.aar/9a3375592d40646f376c0db311087a1a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/wcdb-android-1.0.8.aar/9a3375592d40646f376c0db311087a1a/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.wcdb/wcdb-android/1.0.8/616601d36330f2ea0891e33d4008859c3e1a0cde/wcdb-android-1.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

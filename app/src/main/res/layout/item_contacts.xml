@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp24"
+        android:background="@color/df_F8F8F8"
+        android:paddingLeft="@dimen/d30"
+        android:text="#"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/dp14" />
+
+    <RelativeLayout
+        android:id="@+id/rl_click"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp49"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp15"
+            android:text="#"
+            android:textColor="@color/text_str"
+            android:textSize="@dimen/d30" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/df_theme_bg_gray"
+        android:paddingBottom="@dimen/d05" />
+</LinearLayout>

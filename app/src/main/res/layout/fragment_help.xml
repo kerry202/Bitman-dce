@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    app:srlEnableFooterFollowWhenLoadFinished="true"
+    app:srlEnableScrollContentWhenLoaded="true">
+
+    <cn.dagongniu.bitman.customview.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlClassicsSpinnerStyle="FixedBehind"
+        app:srlDrawableArrowSize="15dp"
+        app:srlDrawableMarginRight="15dp"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+        app:srlDrawableProgressSize="20dp"
+        app:srlEnableLastTime="true"
+        app:srlFinishDuration="500"
+        app:srlTextSizeTime="10sp"
+        app:srlTextSizeTitle="@dimen/dp14"
+        app:srlTextTimeMarginTop="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16" />
+
+        <cn.dagongniu.bitman.customview.XHLoadingView
+            android:id="@+id/lv_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/df_theme_bg_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <cn.dagongniu.bitman.customview.ClassicsFooter
+        android:id="@+id/classics_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlClassicsSpinnerStyle="Translate"
+        app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+        app:srlDrawableProgressSize="20dp"
+        app:srlTextSizeTitle="@dimen/dp14" />
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

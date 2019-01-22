@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/adapter_committee_item_height"
+    android:id="@+id/ll_"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/d30"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/d24" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/d30"
+        android:textColor="@color/df_font"
+        android:textSize="@dimen/d24" />
+
+    <TextView
+        android:id="@+id/tv_volume"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/d30"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/d24" />
+
+</LinearLayout>

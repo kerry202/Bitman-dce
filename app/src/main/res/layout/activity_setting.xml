@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <cn.dagongniu.bitman.customview.CommonToolbar
+        android:id="@+id/commontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/white" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp49"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/lib_white_circle"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/touch_id"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d30" />
+
+                <Switch
+                    android:id="@+id/touch_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:checked="true"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/split_line"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/df_line" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp57"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_set_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp57"
+                    android:background="@drawable/lib_white_circle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:drawableLeft="@mipmap/set_language_icon"
+                        android:drawablePadding="@dimen/dp10"
+                        android:text="@string/set_language"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d28" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d18"
+                        android:layout_height="@dimen/d30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:src="@drawable/go_detail_icon" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp57"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_set_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp57"
+                    android:background="@drawable/lib_white_circle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:drawableLeft="@mipmap/version_msg_icon"
+                        android:drawablePadding="@dimen/dp10"
+                        android:text="@string/about_version"
+                        android:textColor="@color/text_str"
+                        android:textSize="@dimen/dp15" />
+
+                    <ImageView
+                        android:layout_width="@dimen/d18"
+                        android:layout_height="@dimen/d30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp16"
+                        android:src="@drawable/go_detail_icon" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp49"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/white_circle2"
+                android:gravity="center"
+                android:text="@string/logout"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp16" />
+
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

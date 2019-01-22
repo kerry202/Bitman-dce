@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/df_F8F8F8"
+    app:srlDragRate="0.75"
+    app:srlEnableLoadMore="true"
+    app:srlEnablePureScrollMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <cn.dagongniu.bitman.customview.CommonToolbar
+            android:id="@+id/commontoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/shadow_circle"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lib_white_circle"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:layout_marginLeft="@dimen/d30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/safety_phone_icon"
+                        android:drawablePadding="@dimen/dp10"
+                        android:text="@string/phone_verify"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d28" />
+
+                    <Switch
+                        android:id="@+id/phone_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:checked="true"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_setting_phone_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d400"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/go_setting"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d26" />
+
+                        <ImageView
+                            android:layout_width="@dimen/d15"
+                            android:layout_height="@dimen/d26"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:src="@drawable/go_detail_icon" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/split_line"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/df_line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:layout_marginLeft="@dimen/d30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/safety_email_icon"
+                        android:drawablePadding="@dimen/dp10"
+                        android:text="@string/mail_verify"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d28" />
+
+                    <Switch
+                        android:id="@+id/mail_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:checked="true"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_setting_mail_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d400"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/go_setting"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d26" />
+
+                        <ImageView
+                            android:layout_width="@dimen/d15"
+                            android:layout_height="@dimen/d26"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:src="@drawable/go_detail_icon" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/split_line"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/df_line" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:layout_marginLeft="@dimen/d30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/google_icon"
+                        android:drawablePadding="@dimen/dp10"
+                        android:text="@string/google_verify"
+                        android:textColor="@color/df_font"
+                        android:textSize="@dimen/d28" />
+
+                    <Switch
+                        android:id="@+id/google_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:checked="true"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_setting_google_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/d30"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/d400">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/go_setting"
+                            android:textColor="@color/text_str"
+                            android:textSize="@dimen/d26" />
+
+                        <ImageView
+                            android:layout_width="@dimen/d15"
+                            android:layout_height="@dimen/d26"
+                            android:layout_marginLeft="@dimen/d10"
+                            android:src="@drawable/go_detail_icon" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/split_line"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/df_line" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp16"
+            android:background="@drawable/shadow_circle"
+            android:padding="1dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_change_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/lib_white_circle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp13"
+                    android:drawableLeft="@mipmap/change_icon"
+                    android:drawablePadding="@dimen/dp10"
+                    android:text="@string/change_pwd"
+                    android:textColor="@color/df_font"
+                    android:textSize="@dimen/d28" />
+
+                <ImageView
+                    android:layout_width="@dimen/d15"
+                    android:layout_height="@dimen/d26"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d30"
+                    android:src="@drawable/go_detail_icon" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" android:state_pressed="false"/>
+    <item android:drawable="@color/gray" android:state_pressed="true"/>
+    <item android:drawable="@android:color/white"/>
+</selector>
+
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">--><!--&lt;!&ndash; 实心 &ndash;&gt;--><!--<solid android:color="@color/white" />--><!--&lt;!&ndash; 边框 &ndash;&gt;--><!--<stroke--><!--android:width="0.5dp"--><!--android:color="#979797" />--><!--&lt;!&ndash; 圆角 &ndash;&gt;--><!--<corners android:radius="5dp" />--><!--&lt;!&ndash; 边距 &ndash;&gt;-->
+
+    <!--&lt;!&ndash;<padding&ndash;&gt;--><!--&lt;!&ndash;android:bottom="5dp"&ndash;&gt;--><!--&lt;!&ndash;android:left="5dp"&ndash;&gt;--><!--&lt;!&ndash;android:right="5dp"&ndash;&gt;--><!--&lt;!&ndash;android:top="5dp" />&ndash;&gt;--><!--&lt;!&ndash; 渐变 &ndash;&gt;--><!--&lt;!&ndash;<gradient&ndash;&gt;--><!--&lt;!&ndash;android:angle="270"&ndash;&gt;--><!--&lt;!&ndash;android:endColor="#FFFF782"&ndash;&gt;--><!--&lt;!&ndash;android:startColor="#13C7AF" />&ndash;&gt;--><!--</shape>-->

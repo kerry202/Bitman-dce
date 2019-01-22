@@ -1,0 +1,470 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="ScanProgressWheel">
+        <attr name="mn_progressIndeterminate" format="boolean" />
+        <attr name="mn_barColor" format="color" />
+        <attr name="mn_rimColor" format="color" />
+        <attr name="mn_rimWidth" format="dimension" />
+        <attr name="mn_spinSpeed" format="float" />
+        <attr name="mn_barSpinCycleTime" format="integer" />
+        <attr name="mn_circleRadius" format="dimension" />
+        <attr name="mn_fillRadius" format="boolean" />
+        <attr name="mn_barWidth" format="dimension" />
+        <attr name="mn_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base application theme. -->
+    <style name="AppNewTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/ivory</item>
+    </style>
+
+    <!--tablayout字体大小-->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+
+    <!-- EditText 自定义 -->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/darkgrey</item>
+        <item name="colorControlActivated">@color/pink</item>
+    </style>
+
+
+    <!--自定义Dialog样式-->
+    <style name="MyDialog" parent="AlertDialog.AppCompat">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <!--左边弹出Dialog动画-->
+    <style name="LeftDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_left_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_left_out</item>
+    </style>
+
+    <!--右边弹出Dialog动画-->
+    <style name="RightDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_right_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+
+    <!--底部弹出Dialog动画-->
+    <style name="BottomDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">2000</item>
+        <!-- 指示点容器背景 -->
+        <!--<item name="banner_pointContainerBackground">#000000</item>-->
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">14sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@drawable/banner_errer</item>
+    </style>
+
+    <style name="PopMenuAnimation">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <item name="android:windowExitAnimation">@anim/pophide</item>
+    </style>
+
+    <!-- 启动黑屏/白屏,设置透明Theme -->
+    <style name="Theme.AppStartLoadTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppNewTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="StyledScrollerTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="HomeTabStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--主页主题-->
+    <style name="main" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+    </style>
+
+    <!--底部弹出动画-->
+    <style name="PopupWindow">
+        <item name="android:windowEnterAnimation">@anim/window_in</item>
+        <item name="android:windowExitAnimation">@anim/window_out</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <!-- 自定义ppwin动画 渐变-->
+    <style name="PPwin_AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/ppwin_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/ppwin_push_bottom_out</item>
+    </style>
+
+    <style name="MyCradDialogStyle" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item> <!-- 点击外部消失 -->
+
+    </style>
+
+    <style name="TabLayoutStyle" parent="android:Widget">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextColor">@color/df_999999</item>
+        <item name="tabBackground">@color/kine_bg</item>
+    </style>
+
+
+    <!--深度图DepthMapView-->
+    <declare-styleable name="DepthMapView">
+        <!--买入颜色-->
+        <attr name="buy_line_color" format="color|reference" />
+        <!--买入区域内部颜色-->
+        <attr name="buy_path_color" format="color|reference" />
+        <!--卖出颜色-->
+        <attr name="sell_line_color" format="color|reference" />
+        <!--卖出区域内部颜色-->
+        <attr name="sell_path_color" format="color|reference" />
+        <!--线条宽度-->
+        <attr name="line_width" format="dimension" />
+        <!--文字颜色-->
+        <attr name="text_color" format="color|reference" />
+        <!--背景颜色-->
+        <attr name="background_color" format="color|reference" />
+        <!--选中后文字背景颜色-->
+        <attr name="selector_background_color" format="color|reference" />
+        <!--右侧价格行数-->
+        <attr name="line_count" format="integer" />
+        <!--文字大小-->
+        <attr name="text_size" format="dimension" />
+        <!--圆圈半径-->
+        <attr name="circle_radius" format="dimension" />
+        <!--点的半径-->
+        <attr name="dot_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--时间线TimeLineMarkerView-->
+    <declare-styleable name="TimeLineMarker">
+        <!--圆点大小-->
+        <attr name="markerSize" format="dimension" />
+        <!--圆点颜色或者图片-->
+        <attr name="marker" format="color|reference" />
+        <!--上面线段颜色或者图片-->
+        <attr name="upLine" format="color|reference" />
+        <!--下面线段颜色或者图片-->
+        <attr name="downLine" format="color|reference" />
+        <!--线段粗细-->
+        <attr name="lineSize" format="dimension" />
+        <!--横向还是竖向-->
+        <attr name="orientation" format="boolean" />
+    </declare-styleable>
+
+    <!--跑马灯-->
+    <declare-styleable name="MarqueeView">
+        <attr name="marqueeview_repeat_type" format="enum">
+            <enum name="repeat_onetime" value="0" /><!-- 播放一次 -->
+            <enum name="repeat_interval" value="1" />  <!--连续播放 循环结束再继续下次循环-->
+            <enum name="repeat_continue" value="2" />  <!--连续播放 到末尾直接继续下次循环-->
+        </attr><!--循环模式-->
+        <attr name="marqueeview_text_distance" format="integer" /><!--每个item之间的距离-->
+        <attr name="marqueeview_text_startlocationdistance" format="float" /><!--开始的起始位置 按距离控件左边的百分比 0~1之间 -->
+        <attr name="marqueeview_text_speed" format="float" /><!--播放速度 也就是文字滚动速度-->
+        <attr name="marqueeview_text_color" format="color|reference" /><!-- 文字颜色 -->
+        <attr name="marqueeview_text_size" format="float" /><!-- 文字大小 -->
+        <attr name="marqueeview_isclickalbe_stop" format="boolean" /><!--是否点击暂停-->
+        <attr name="marqueeview_is_resetLocation" format="boolean" /><!--重新改变内容的时候 ， 是否初始化 位置，默认为true，改变-->
+
+    </declare-styleable>
+
+    <declare-styleable name="SlantedTextView">
+        <attr name="slantedTextSize" format="dimension" />
+        <attr name="slantedBackgroundColor" format="color" />
+        <attr name="slantedText" format="string" />
+        <attr name="slantedTextColor" format="color" />
+        <attr name="slantedLength" format="dimension" />
+        <attr name="slantedMode" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="right_bottom" value="3" />
+            <enum name="left_triangle" value="4" />
+            <enum name="right_triangle" value="5" />
+            <enum name="left_bottom_triangle" value="6" />
+            <enum name="right_bottom_triangle" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <!--密码输入框PasswordView-->
+    <declare-styleable name="PasswordView">
+        <!--密码长度-->
+        <attr name="passwordLength" format="integer" />
+        <!--内边距-->
+        <attr name="passwordPadding" format="dimension" />
+        <!--边框颜色-->
+        <attr name="borderColor" format="color" />
+        <!--边框宽度-->
+        <attr name="borderWidth" format="dimension" />
+        <!--光标闪烁间隔时间-->
+        <attr name="cursorFlashTime" format="integer" />
+        <!--是否启用光标-->
+        <attr name="isCursorEnable" format="boolean" />
+        <!--‘*’号大小-->
+        <attr name="cipherEnable" format="boolean" />
+        <!--光标颜色-->
+        <attr name="cursorColor" format="color" />
+        <!--是否启用‘*’显示-->
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--验证码输入框PasswordView-->
+    <declare-styleable name="VerifyCodeView">
+        <!--输入框个数-->
+        <attr name="verifyCodeCount" format="integer" />
+        <!--输入框间距-->
+        <attr name="verifyCodeMargin" format="dimension" />
+        <!--边框颜色-->
+        <attr name="verifyCodeBackground" format="reference" />
+        <!--文字颜色-->
+        <attr name="verifyCodeTextColor" format="color|reference" />
+        <!--文字大小-->
+        <attr name="verifyCodeTextSize" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FoldTextView">
+        <!--展示最大行数-->
+        <attr name="showMaxLine" format="integer" />
+        <!--提示文字位置 0-最后一行末尾，1-另起一行-->
+        <attr name="tipGravity" format="enum">
+            <enum name="last" value="0" />
+            <enum name="first" value="1" />
+        </attr>
+        <!--提示文字颜色-->
+        <attr name="tipColor" format="reference|color" />
+        <!--提示是否可以点击-->
+        <attr name="tipClickable" format="boolean" />
+        <!--折叠时的提示文字-->
+        <attr name="foldText" format="string" />
+        <!--展开时的提示文字-->
+        <attr name="expandText" format="string" />
+        <!--点击展开后是否显示收起全文提示-->
+        <attr name="showTipAfterExpand" format="boolean" />
+        <attr name="isSetParentClick" format="boolean" />
+    </declare-styleable>
+
+    <!--加强版折叠TextView-->
+    <declare-styleable name="ExpandableTextView">
+        <!--保留的行数-->
+        <attr name="ep_max_line" format="integer" />
+        <!--是否需要展开-->
+        <attr name="ep_need_expand" format="boolean" />
+        <!--是否需要收起 这个是建立在开启展开的基础上的-->
+        <attr name="ep_need_contract" format="boolean" />
+        <!--是否需要@用户 -->
+        <attr name="ep_need_mention" format="boolean" />
+        <!--是否需要对链接进行处理 -->
+        <attr name="ep_need_link" format="boolean" />
+        <!--是否需要动画-->
+        <attr name="ep_need_animation" format="boolean" />
+        <!--是否需要永远将展开或者收回放置在最后边-->
+        <attr name="ep_need_always_showright" format="boolean" />
+        <!--是否需要自定义规则-->
+        <attr name="ep_need_self" format="boolean" />
+        <!--收起的文案-->
+        <attr name="ep_contract_text" format="string" />
+        <!--展开的文案-->
+        <attr name="ep_expand_text" format="string" />
+        <!--展开的文字的颜色-->
+        <attr name="ep_expand_color" format="color" />
+        <!--收起的文字的颜色-->
+        <attr name="ep_contract_color" format="color" />
+        <!--在收回和展开前面添加的内容的字体颜色-->
+        <attr name="ep_end_color" format="color" />
+        <!--链接的文字的颜色-->
+        <attr name="ep_link_color" format="color" />
+        <!--@用户的文字的颜色-->
+        <attr name="ep_mention_color" format="color" />
+        <!--自定义规则的文字的颜色-->
+        <attr name="ep_self_color" format="color" />
+        <!--链接的图标-->
+        <attr name="ep_link_res" format="reference" />
+    </declare-styleable>
+
+
+    <!--圆角imageview-->
+    <declare-styleable name="RoundImageView">
+        <attr name="riv_borderRadius" format="dimension" />
+        <attr name="riv_type">
+            <enum name="normal" value="-1" />
+            <enum name="circle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="riv_borderWidth" format="dimension" />
+        <attr name="riv_borderColor" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_shape" format="enum">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="oval" value="3" />
+        </attr>
+        <attr name="siv_round_radius" format="dimension" />
+        <attr name="siv_round_radius_leftTop" format="dimension" />
+        <attr name="siv_round_radius_leftBottom" format="dimension" />
+        <attr name="siv_round_radius_rightTop" format="dimension" />
+        <attr name="siv_round_radius_rightBottom" format="dimension" />
+        <attr name="siv_border_size" format="dimension" />
+        <attr name="siv_border_color" format="color" />
+    </declare-styleable>
+
+    <!-- 设置view相关selector熟悉-->
+    <declare-styleable name="View">
+
+        <attr name="injectListener" format="boolean" />
+
+        <!--该属性已过时，被废弃-->
+        <attr name="sel_background" format="color" />
+
+        <!-- 背景状态 -->
+        <attr name="sel_background_pressed" format="reference|color" />
+        <attr name="sel_background_selected" format="reference|color" />
+
+        <!-- 背景形状 -->
+        <attr name="sel_background_shape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <!-- 背景圆角 -->
+        <attr name="sel_background_corners" format="dimension" />
+        <attr name="sel_background_corner_topLeft" format="dimension" />
+        <attr name="sel_background_corner_topRight" format="dimension" />
+        <attr name="sel_background_corner_bottomLeft" format="dimension" />
+        <attr name="sel_background_corner_bottomRight" format="dimension" />
+
+        <!-- 背景边框默认状态 -->
+        <attr name="sel_background_border_color" format="color" />
+        <attr name="sel_background_border_width" format="dimension" />
+        <!-- 背景边框状态 -->
+        <attr name="sel_background_border_pressed" format="color" />
+        <attr name="sel_background_border_selected" format="color" />
+
+        <!-- ripple水波纹效果-->
+        <attr name="sel_background_ripple" format="reference|color" />
+        <attr name="sel_background_ripple_mask" format="reference|color" />
+        <!-- ripple mask形状(仅在sel_background_ripple_mask为color时生效)-->
+        <attr name="sel_background_ripple_mask_shape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+            <enum name="line" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <!-- ripple mask圆角 -->
+        <attr name="sel_background_ripple_mask_corners" format="dimension" />
+        <attr name="sel_background_ripple_mask_corner_topLeft" format="dimension" />
+        <attr name="sel_background_ripple_mask_corner_topRight" format="dimension" />
+        <attr name="sel_background_ripple_mask_corner_bottomLeft" format="dimension" />
+        <attr name="sel_background_ripple_mask_corner_bottomRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MeiHeartView">
+        <!--爱心动画时长-->
+        <attr name="heartDuration" format="integer" />
+        <!--是否显示透明度动画-->
+        <attr name="heartEnableAlpha" format="boolean" />
+        <!--是否显示缩放动画-->
+        <attr name="heartEnableScale" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextPathView">
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="cycle" format="boolean" />
+        <attr name="autoStart" format="boolean" />
+    </declare-styleable>
+
+    <!-- 风扇线条颜色 -->
+    <declare-styleable name="FanView">
+        <attr name="lineColor" format="color" />
+        <attr name="fanRadiusRatio" format="float" />
+        <attr name="fanSweepAngle" format="integer" />
+        <attr name="fanDuration" format="integer" />
+    </declare-styleable>
+
+</resources>

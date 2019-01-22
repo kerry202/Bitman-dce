@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="start_camera_error">เกิดข้อผิดพลาดในการเปิดกล้อง</string>
+    <string name="no_zxing">ไม่พบรหัส QR</string>
+    <string name="click_fower">ปิดบัง</string>
+    <string name="close_flashlight_tv">แตะปิด</string>
+    <string name="flashlight_tv">ส่องสว่างเล็กน้อย</string>
+    <string name="scan_qr_str">สแกนรหัส QR</string>
+    <string name="scan_des">รหัส QR จะอยู่ในกล่องและสแกนโดยอัตโนมัติ</string>
+    <string name="select_scan">เฉลียง</string>
+    <string name="scan_str">กวาด</string>
+    <string name="find_updating">พบรุ่นใหม่โปรดอัปเกรด</string>
+    <string name="start_install">เริ่มอัปเกรด</string>
+    <string name="version_updating">อัปเดตเวอร์ชัน</string>
+    <string name="withdrawal_order">ถอนเงินทั้งหมด</string>
+    <string name="exit_app_str">กดปุ่มย้อนกลับอีกครั้งเพื่อออก</string>
+    <string name="msg_commit_success">ส่งข้อความเรียบร้อยแล้ว</string>
+    <string name="msg_commit_error">ไม่สามารถส่งข้อความ</string>
+
+
+    <string name="app_name">bitman</string>
+    <string name="reg_phone">ลงทะเบียนมือถือ</string>
+    <string name="reg_emil">ลงทะเบียนอีเมล</string>
+    <string name="reg_phone_emil_hint">โปรดป้อนหมายเลขโทรศัพท์มือถือหรือที่อยู่อีเมลของคุณ</string>
+    <string name="reg_code_hint">โปรดป้อนรหัสยืนยัน</string>
+    <string name="reg_get_code">รับรหัสยืนยัน</string>
+    <string name="reg_set_pwd">โปรดตั้งรหัสผ่านเข้าสู่ระบบ</string>
+    <string name="reg_yes_pwd">โปรดยืนยันรหัสผ่านเข้าสู่ระบบ</string>
+    <string name="reg_yjzhs">บัญชีที่มีอยู่</string>
+    <string name="reg_login">กรุณาเข้าสู่ระบบ</string>
+    <string name="no_data">ขณะนี้คุณไม่มีคำสั่งซื้อ~</string>
+    <string name="deal_setpwd">โปรดตั้งรหัสผ่านการทำธุรกรรม</string>
+    <string name="deal_yespwd">โปรดยืนยันรหัสผ่านการทำธุรกรรม</string>
+    <string name="next">ขั้นตอนถัดไป</string>
+    <string name="home">หน้าแรก</string>
+    <string name="home_bz">สกุลเงิน</string>
+    <string name="home_jg_btc">ราคา（BTC）</string>
+    <string name="home_jg_eth">ราคา（ETH）</string>
+    <string name="home_zdf">ราคาขึ้นลง</string>
+    <string name="trading">แลกเปลี่ยน</string>
+    <string name="buy">ซื้อ</string>
+    <string name="sell">ขาย</string>
+    <string name="refresh_ok">รีเฟรชสำเร็จ</string>
+    <string name="load_ok">โหลดเรียบร้อยแล้ว</string>
+    <string name="notice_1">ประกาศในเวทีการค้าออนไลน์ในเดือนพฤษภาคม</string>
+    <string name="notice_2">สำหรับสิ่งที่เกิดขึ้นก็แน่นอนที่นี่</string>
+    <string name="notice_3">สำหรับกิจกรรมกิจกรรมอะไรที่นี่คือกิจกรรมอะไรคือกิจกรรมที่แน่นอนที่นี่สำหรับกิจกรรมสิ่งที่แน่นอนใส่ที่นี่สำหรับกิจกรรมสิ่งที่แน่นอนใส่ที่นี่สำหรับกิจกรรมสิ่งที่แน่นอนใส่นี้</string>
+    <string name="setting_language_title">การตั้งค่าภาษา</string>
+    <string name="setting_language_auto">ปฏิบัติตามระบบ</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_simplified_chinese">简体中文</string>
+    <string name="setting_traditional_chinese">繁体中文</string>
+    <string name="setting_traditional_ty">ไทย</string>
+
+    <!--刷新加载-->
+    <string name="srl_header_pulling">ดึงลงสามารถรีเฟรชได้</string>
+    <string name="srl_header_refreshing">รวย…</string>
+    <string name="srl_header_loading">กำลังโหลด…</string>
+    <string name="srl_header_release">รีเฟรชการรีเฟรชทันที</string>
+    <string name="srl_header_finish">รีเฟรชเสร็จแล้ว</string>
+    <string name="srl_header_failed">รีเฟรชล้มเหลว</string>
+    <string name="srl_header_update">อัปเดตล่าสุด M-d HH:mm</string>
+    <string name="srl_header_secondary">ปล่อยออกสู่ชั้นสอง</string>
+
+    <string name="srl_footer_pulling">ดึงขึ้นและโหลดเพิ่มเติม</string>
+    <string name="srl_footer_release">ปล่อยโหลดทันที</string>
+    <string name="srl_footer_loading">กำลังโหลด…</string>
+    <string name="srl_footer_refreshing">รวย…</string>
+    <string name="srl_footer_finish">กำลังโหลดเสร็จสมบูรณ์</string>
+    <string name="srl_footer_failed">โหลดล้มเหลว</string>
+    <string name="srl_footer_nothing">ไม่มีข้อมูลเพิ่มเติม</string>
+
+    <string name="commitMsg">ส่งใบสั่งงาน</string>
+    <string name="commitMsgdes">โปรดป้อนรายละเอียดคำสั่งซื้อ</string>
+    <string name="within_str">ภายใน 150 คำ</string>
+    <string name="input_str">กรุณากรอกหมายเลขบัตร 12 หลักตามลำดับ</string>
+    <string name="crad_input_code">โปรดป้อนหมายเลขซีเรียลของการ์ด：</string>
+    <string name="tips_str">เคล็ดลับ：</string>
+    <string name="each_crad_str">* บัตรแต่ละใบสามารถแลกได้เพียงครั้งเดียว</string>
+    <string name="multiple_str">* หนึ่งบัญชีสามารถใช้ได้หลายบัตร</string>
+    <string name="please_redeem_str">* กรุณาแลกบัตรภายในระยะเวลาที่กำหนด หลังจากวันหมดอายุบัตรไม่สามารถใช้ได้</string>
+    <string name="dkdh_str">คลิกบัตรเพื่อแลกเปลี่ยน</string>
+    <string name="bi_zhong">ประเภทสกุลเงินดิจิตอล</string>
+    <string name="quantity_str">ปริมาณ</string>
+    <string name="valid_until_str">ใช้ได้จนถึง</string>
+    <string name="dec_str">หลังจากใช้บัตรจุด UCT ยอดดุลบัญชีจะเพิ่มขึ้นโดย UCT เท่ากับจำนวนเงินที่ระบุไว้ซึ่งสามารถซื้อขายโอนหรือรับเงินได้</string>
+    <string name="exchange_str">แลกเปลี่ยน</string>
+    <string name="redempion_str">ดำเนินการแลกเปลี่ยนต่อไป</string>
+    <string name="successful_str">แลกเปลี่ยนสำเร็จ</string>
+    <string name="go_asset">，ไปที่เนื้อหา</string>
+    <string name="go_asset2">ไปที่เนื้อหา</string>
+    <string name="dk_str">คลิกบัตร</string>
+    <string name="user_name_str">ชื่อผู้ใช้</string>
+    <string name="user_id_str">ID ผู้ใช้</string>
+    <string name="remark_str">คำพูด</string>
+    <string name="my_entrust">ค่าคอมมิชชั่นของฉัน</string>
+    <string name="vip2_str">การตรวจสอบเอกลักษณ์สามารถอัพเกรดเป็น LV2 ได้</string>
+    <string name="msg_commit_min">ข้อมูลใบสั่งงานต้องมีจำนวนไม่น้อยกว่า 10 คำ~</string>
+    <string name="vip3_str">ติดต่อฝ่ายบริการลูกค้าเพื่อดูวิธีอัพเกรด LV3</string>
+    <string name="vip4_str">ขณะนี้คุณอยู่ในระดับสูงสุดแล้ว</string>
+    <string name="home_safety">ความปลอดภัย</string>
+    <string name="current_str">การสั่งซื้อปัจจุบัน</string>
+    <string name="depth_map_str">แผนที่ความลึก</string>
+    <string name="qr_code">เติม QR code</string>
+    <string name="zh_str">เทียบเท่า (CNY)</string>
+    <string name="topup_address">ที่อยู่เติมเงิน</string>
+    <string name="check_progress">ทบทวนความคืบหน้า</string>
+    <string name="security_msg">ข้อมูลการรับรอง</string>
+    <string name="id_number_str">หมายเลขประจำตัว: </string>
+    <string name="check_authentication_1">1.โปรดถ่ายภาพตามข้อกำหนดมาตรฐาน;</string>
+    <string name="check_authentication_2">2.เก็บแผ่นกระดาษเปล่าไว้เขียน: การรับรอง DCE / ชื่อ / วันที่รับรองของฉัน;</string>
+    <string name="check_authentication_3">3.บัตรประจำตัวมือถือให้ใช้บัตรประจำตัวที่ชัดเจน (ด้านหน้าและด้านหลัง)。</string>
+    <string name="id_type_str">ประเภทเอกสาร: </string>
+    <string name="no_topup_str">คุณยังไม่ได้บันทึกการบันทึกอีกครั้ง~</string>
+    <string name="no_withdrawal_str">คุณยังไม่ได้ยกเลิกบันทึก~</string>
+    <string name="no_assets_str">คุณไม่มีสินทรัพย์เลย ~ \n ไปและเติมเงิน</string>
+    <string name="add_optional_str">คุณยังไม่ได้เก็บสกุลเงินไว้~</string>
+
+    <array name="entrustnadorder">
+        <item>มอบความไว้วางใจ</item>
+        <item>แบบฟอร์มการสั่งซื้อสินค้า</item>
+    </array>
+
+
+    <string name="home_price">ราคา</string>
+    <string name="home_optional">ตัวเลือก</string>
+
+    <!--##########################33-->
+    <string name="bind_phone_email_seuccss">ผูกกล่องจดหมายหมายเลขเรียบร้อยแล้ว</string>
+    <string name="bind_google_seuccss">เชื่อมโยง Google เรียบร้อยแล้ว</string>
+
+    <!--  登陆注册-->
+    <string name="login_success">การเข้าสู่ระบบที่ประสบความสำเร็จ</string>
+    <string name="esc_login_success">ออกจากระบบ</string>
+    <string name="user_identity_authen_success">อัปโหลดข้อมูลเรียบร้อยแล้ว</string>
+    <string name="registered_choosecountries">เลือกประเทศและเขต</string>
+
+    <string name="login_email">ลงชื่อเข้าใช้อีเมล</string>
+    <string name="login_phone">การเข้าสู่ระบบหมายเลขโทรศัพท์มือถือ</string>
+    <string name="login_email_hint">โปรดป้อนที่อยู่อีเมลของคุณ</string>
+    <string name="login_phone_hint">กรุณาใส่เบอร์มือถือ</string>
+    <string name="login_pwd_hint">โปรดป้อนรหัสผ่านของคุณ</string>
+    <string name="login_login">เข้าสู่ระบบ</string>
+    <string name="login_forget_pwd">ลืมรหัสผ่าน</string>
+    <string name="registered">การลงทะเบียน</string>
+    <string name="use_login_email_hint">ลงชื่อเข้าใช้ด้วยอีเมล</string>
+    <string name="use_login_phone_hint">ลงชื่อเข้าใช้ด้วยหมายเลขมือถือของคุณ</string>
+    <string name="login_phone_thereare">หมายเลขโทรศัพท์มือถือได้รับการลงทะเบียนแล้ว</string>
+    <string name="login_phone_to_login">หมายเลขโทรศัพท์มือถือได้รับการจดทะเบียนแล้วกรุณาเข้าสู่ระบบโดยตรง</string>
+    <string name="to_login">ไปที่เข้าสู่ระบบ</string>
+    <string name="login_show_errer">อีเมลหรือรหัสผ่านไม่ถูกต้องคุณมีโอกาสที่จะลอง 3 ครั้ง</string>
+
+    <string name="login_show_errer_phone">โทรศัพท์หรือรหัสผ่านผิดพลาดคุณมีโอกาสที่จะลอง 3 ครั้ง</string>
+
+    <string name="lregistered_reading">ฉันเห็นด้วยกับ DCE</string>
+    <string name="registered_phone_errer">รูปแบบตัวเลขไม่ถูกต้อง</string>
+    <string name="registered_pasd_errer">รูปแบบรหัสผ่านไม่ถูกต้องโปรดป้อนตัวเลข 6-16 หลักพร้อมภาษาอังกฤษ</string>
+    <string name="registered_eamil_errer">รูปแบบกล่องจดหมายไม่ถูกต้อง</string>
+    <string name="registered_phone">ลงทะเบียนโดยใช้หมายเลขโทรศัพท์มือถือ</string>
+    <string name="registered_email">ลงทะเบียนอีเมล</string>
+    <string name="registered_hint_code">โปรดป้อนรหัสยืนยัน</string>
+    <string name="registered_get_code">รับรหัสยืนยัน</string>
+    <string name="registered_oax_xy">ฉันเห็นด้วยกับ DCE</string>
+    <string name="registered_oax_agreement">ข้อตกลงผู้ใช้</string>
+    <string name="registered_next">ขั้นตอนถัดไป</string>
+    <string name="registered_go_login">มีบัญชีแล้วหรือยัง? ไปที่เข้าสู่ระบบ</string>
+    <string name="use_registered_phone_hint">ลงทะเบียนด้วยหมายเลขโทรศัพท์มือถือของคุณ</string>
+    <string name="use_registered_email_hint">ใช้การลงทะเบียนอีเมล</string>
+    <string name="registered_cx_get_cede">reacquisition</string>
+    <string name="registered_code_errer">ข้อผิดพลาดของรหัสยืนยัน</string>
+
+
+    <string name="registered_success_to_login">การลงทะเบียนสำเร็จแล้วกรุณาเข้าสู่ระบบ</string>
+    <string name="update_passwrod_success_to_login">รหัสผ่านได้รับการแก้ไขแล้วกรุณาเข้าสู่ระบบ</string>
+
+    <string name="show_hint_email_thereisno">ไม่มีบัญชีอีเมล</string>
+    <string name="show_hint_phone_thereisno">บัญชีมือถือไม่มีอยู่</string>
+
+    <string name="forgot_phone_title">เรียกรหัสผ่านจากโทรศัพท์ของคุณ</string>
+    <string name="forgot_email_title">เรียกรหัสผ่านทางอีเมล</string>
+
+    <string name="setpwd_eamil_title">เรียกรหัสผ่านทางอีเมล</string>
+    <string name="setpwd_phone_title">เรียกรหัสผ่านจากโทรศัพท์ของคุณ</string>
+    <string name="setpwd_the_title">ตั้งรหัสผ่าน</string>
+
+
+    <string name="setpwd_lin_hint">ตั้งรหัสผ่าน 6 - 16 หลักพร้อมภาษาอังกฤษ</string>
+    <string name="old_setpwd_lin_hint">โปรดป้อนรหัสผ่านเดิม</string>
+    <string name="repeat_setpwd_lin_hint">ทำซ้ำรหัสผ่าน 6 - 16 หลักบวกภาษาอังกฤษ</string>
+    <string name="setpwd_lin_hint_yes">ยืนยันรหัสผ่าน</string>
+    <string name="setpwd_commit">เสนอ</string>
+
+
+
+    <string name="update_login_success">รีเซ็ตรหัสผ่านสำเร็จโปรดเข้าสู่ระบบอีกครั้ง</string>
+    <string name="forgot_email_show">เรียกรหัสผ่านทางอีเมล</string>
+    <string name="forgot_phone_show">เรียกรหัสผ่านจากโทรศัพท์ของคุณ</string>
+    <string name="forgot_phone_registered">ลงทะเบียนหมายเลขโทรศัพท์</string>
+    <string name="forgot_input_phone">โปรดป้อนหมายเลขโทรศัพท์มือถือของคุณ</string>
+    <string name="forgot_eamil_registered">กล่องจดหมายที่ลงทะเบียนแล้ว</string>
+    <string name="forgot_input_eamil">โปรดป้อนที่อยู่อีเมลของคุณ</string>
+
+    <!-- dialog -->
+    <string name="dialog_validation">ตรวจสอบความปลอดภัย</string>
+
+
+    <string name="dialog_email">ตู้จดหมาย:</string>
+    <string name="dialog_get_code">รับรหัสยืนยัน</string>
+    <string name="dialog_phone">หมายเลขโทรศัพท์มือถือ:</string>
+    <string name="dialog_google">การยืนยันของ Google</string>
+    <string name="dialog_commit">ส่ง</string>
+
+    <!-- 资产 -->
+    <string name="address_error">รูปแบบที่อยู่ไม่ถูกต้อง</string>
+    <string name="assets_get_sum">การถือครองรวม</string>
+    <string name="assets_ky_sum">รวมพร้อมใช้งาน</string>
+    <string name="assets_freeze_money">จำนวนเงินที่แช่แข็ง</string>
+    <string name="assets_btc">การประเมินค่า CNY</string>
+    <string name="assets_market">ตลาด</string>
+    <string name="add_withdrawal_adderss_success">เพิ่มที่อยู่เรียบร้อยแล้ว</string>
+    <string name="assets">สินทรัพย์</string>
+    <string name="mine">ของฉัน</string>
+    <string name="assets_record">บันทึกการเติมเงิน</string>
+    <string name="assets_withdrawal">ถอนเงิน</string>
+    <string name="assets_topup">เติมเงิน</string>
+    <string name="assets_my">สินทรัพย์ของฉัน</string>
+    <string name="assets_bz">ประเภทสกุลเงินดิจิตอล</string>
+    <string name="assets_ky_count">ปริมาณที่มีอยู่</string>
+    <string name="assets_dj_count">จำนวนของ freezes</string>
+
+
+    <string name="assets_sum">ทั้งหมด</string>
+    <string name="assets_state">รัฐ</string>
+    <string name="assets_sum_e">ทั้งหมด</string>
+    <string name="assets_kyzc">สินทรัพย์ที่มีจำหน่าย</string>
+    <string name="assets_txje">จำนวนเงินที่เบิกถอนเงินสด</string>
+    <string name="assets_all_tx">สมบูรณ์</string>
+    <string name="assets_sxfy">ค่าธรรมเนียม:</string>
+    <string name="assets_sjdz">เข้าบัญชีสุทธิ:</string>
+    <string name="assets_tbdz">ที่อยู่การถอนเงิน</string>
+    <string name="assets_wxts">เคล็ดลับ： โปรดกรอกข้อมูลใน Tag ที่อยู่</string>
+    <string name="assets_add">เพิ่มที่อยู่</string>
+    <string name="assets_no_add">ยังไม่มีที่อยู่</string>
+    <string name="assets_address">ที่อยู่</string>
+    <string name="assets_note">หมายเหตุ</string>
+    <string name="assets_yes_add">ยืนยันการเพิ่ม</string>
+    <string name="assets_add_address">เพิ่มเติมที่อยู่</string>
+    <string name="assets_withdrawal_successful">ถอนสำเร็จ</string>
+    <string name="assets_coyp">คัดลอกที่อยู่</string>
+    <string name="click_coyp">คลิกเพื่อคัดลอก</string>
+    <string name="assets_coyp_label">คัดลอกฉลาก</string>
+    <string name="assets_coyp_code">บันทึกQRโค้ด</string>
+    <string name="assets_add_tag">แท็กแท็กที่อยู่</string>
+    <string name="assets_icon_count">ใส่จำนวนเหรียญ</string>
+    <!--<string name="assets_icon_count">可提额度：50.00000000 - 1000.00000000</string>-->
+    <string name="add_adderss">ป้อนที่อยู่</string>
+    <string name="add_note">ป้อนโน้ต</string>
+
+
+    <string name="assets_min_max">สกุลเงินนี้ถูกถอนขึ้น%1$s,การถอนสูงสุด%2$s</string>
+
+    <string name="assets_keti_edu">จำนวนเหลือที่คุณสามารถถอนได้ในวันนี้คือ%1$sBTC</string>
+    <array name="assets_record">
+        <item>บันทึกการเติมเงิน</item>
+        <item>บันทึกการถอน</item>
+    </array>
+
+
+    <string name="assets_min_show_hint">ปริมาณที่มีอยู่ขั้นต่ำ：%1$s</string>
+    <string name="assets_max_show_hint">ปริมาณที่สามารถใช้ได้สูงสุด：%1$s</string>
+    <string name="assets_today_show_hint">วันนี้สามารถพูดถึงปริมาณได้：%1$s BTC</string>
+
+    <!--委托订单-->
+    <string name="entrust_order">การสั่งซื้อ/การสั่งซื้อ</string>
+    <string name="entrust">มอบความไว้วางใจ</string>
+    <string name="order">สั่งซื้อ</string>
+    <string name="entrust_order_time">เวลา</string>
+    <string name="entrust_order_jyd">เวลาแลกเปลี่ยน</string>
+    <string name="entrust_order_jg">ราคา</string>
+    <string name="entrust_order_count">ปริมาณ</string>
+    <string name="entrust_order_cz">ปฏิบัติการ</string>
+    <string name="entrust_order_undo">การถอนเงิน</string>
+    <string name="entrust_order_lx">ชนิด</string>
+
+    <string name="entrust_order_ddsx">การคัดเลือกใบสั่งซื้อ</string>
+    <string name="entrust_order_date">วันที่</string>
+    <string name="entrust_order_market">ตลาด</string>
+    <string name="entrust_order_t">1 วัน</string>
+    <string name="entrust_order_z">1 สัปดาห์</string>
+    <string name="entrust_order_y">เดือนมกราคม</string>
+    <string name="entrust_order_3y">เดือนมีนาคม</string>
+    <string name="entrust_order_all">สมบูรณ์</string>
+    <string name="entrust_order_bz">ประเภทสกุลเงิน</string>
+    <string name="entrust_order_buy_sell">ซื้อมา / ขายไป</string>
+    <string name="entrust_order_buy">ซื้อมา</string>
+    <string name="entrust_order_sell">ขายไป</string>
+    <string name="entrust_order_ycycx">การเพิกถอนที่ซ่อนอยู่</string>
+    <string name="entrust_order_ok">สมบูรณ์</string>
+    <string name="entrust_order_reset">รีเซ็ต</string>
+
+
+    <!--市场-->
+    <string name="market">ตลาด</string>
+
+
+    <!--首页-->
+    <string name="announcement_content_no_id">ไม่พบรหัสประกาศโปรดลองอีกครั้ง</string>
+    <string name="home_recommendmarketlist_success">การเข้าสู่ระบบที่ประสบความสำเร็จ</string>
+    <string name="home_qty">จำนวน:</string>
+    <string name="home_hint_search">ป้อนคำสำคัญของธุรกรรม</string>
+
+    <!--交易-->
+    <string name="trding_k_line">แผนภูมิเส้น K</string>
+    <string name="trding_buy">ซื้อ</string>
+    <string name="trding_sell">ขาย</string>
+    <string name="fall_jiage">ราคา</string>
+    <string name="fall_count">จำนวน</string>
+    <string name="trading_sum">รวมทั้งหมด</string>
+    <string name="trading_sxfy">ค่าธรรมเนียม</string>
+    <string name="trading_ky">ที่มีจำหน่าย</string>
+
+
+    <!--请求状态-->
+    <string name="load_error">ขอข้อผิดพลาด</string>
+    <string name="load_data_fail">คำขอข้อมูลล้มเหลว</string>
+
+    <!--公告-->
+    <string name="announcement">ประกาศ</string>
+    <string name="announcement_more">ดูเพิ่มเติม</string>
+    <string name="announcement_close">กลับ</string>
+    <string name="announcement_tz">ประกาศแจ้ง</string>
+    <string name="announcement_fbr">สำนักพิมพ์:</string>
+
+    <!--其他-->
+    <string name="jia">สิบ</string>
+    <string name="jian">一</string>
+    <string name="hint">คำใบ้คำใบ้</string>
+
+    <string name="undefined_type">ประเภทที่ไม่ได้กำหนด</string>
+
+    <string name="withdrawal_failed">ล้มเหลว</string>
+    <!--VPN-->
+    <string name="menu_item_switch">หนังสือมอบฉันทะ</string>
+    <string name="menu_item_toggle_global">เปิด / ปิดโหมดส่วนกลาง</string>
+    <string name="menu_item_about">บน</string>
+    <string name="menu_item_exit">ออกจากระบบ</string>
+    <string name="config_url">ที่อยู่การกำหนดค่า</string>
+    <string name="config_not_set_value">ยังไม่ได้ตั้งค่า</string>
+
+
+
+    <string name="config_url_scan">สแกนโค้ด QR</string>
+    <string name="config_url_manual">ป้อนข้อมูลด้วยตนเอง</string>
+    <string name="config_url_scan_hint">สแกนโค้ด QR ของที่อยู่ที่กำหนดค่า</string>
+    <string name="select_app">เลือกซอฟต์แวร์เพื่อใช้ตัวแทน</string>
+    <string name="select_app_detail">ไม่ได้เลือก</string>
+    <string name="proxied_apps">ซอฟต์แวร์ตัวแทน</string>
+    <string name="btn_ok">ยืนยัน</string>
+    <string name="btn_cancel">ยกเลิก</string>
+    <string name="btn_more">ขึ้น&#8230;</string>
+    <string name="vpn_connected_status">เกี่ยวข้อง</string>
+    <string name="vpn_disconnected_status">ตัดการเชื่อมต่อ</string>
+    <string name="about_info">Shadowsocks Android ได้รับการพัฒนาและดูแลโดย dawei และสามารถใช้ได้กับ Android 4.0 + โดยไม่มีสิทธิ์ ROOT ขึ้นอยู่กับการปรับเปลี่ยน SmartProxy และ Shadowsocks-Java</string>
+    <string name="exit_confirm_info">การดำเนินการนี้จะยกเลิกการเชื่อมต่อ VPN คุณแน่ใจหรือไม่ว่าต้องการออก</string>
+    <string name="err_invalid_url">ที่อยู่ในการกำหนดค่าไม่ถูกต้อง</string>
+    <string name="config_url_hint">ss://method:password@host:port</string>
+
+    <!-- K线 -->
+    <string name="open_price">ราคาเปิด</string>
+    <string name="close_price">ราคาปิด</string>
+    <string name="high_price">ราคาสูงสุด</string>
+    <string name="low_price">ราคาต่ำสุด</string>
+    <string name="price">ราคา</string>
+    <string name="change_rate">Ups และดาวน์</string>
+    <string name="volume">ปริมาณ</string>
+
+
+    <string name="kline_minute">แบ่งเวลา</string>
+    <string name="kline_fifteen_minutes">15 คะแนน</string>
+    <string name="kline_minutes">นาที</string>
+    <string name="hour">ชั่วโมง</string>
+    <string name="kline_one_hour">1 ชั่วโมง</string>
+    <string name="kline_four_hour">4 ชั่วโมง</string>
+    <string name="kline_eight_hour">8 ชั่วโมง</string>
+    <string name="kline_one_day">1 วัน</string>
+    <string name="kline_seven_day">7 วัน</string>
+    <string name="kline_daily_line">บรรทัดรายวัน</string>
+    <string name="kline_weekly_line">เส้นแสดงรูปร่าง</string>
+    <string name="kline_month_line">เดือน</string>
+    <string name="tv_more">ขึ้น</string>
+    <string name="kline_one_min">1 นาที</string>
+    <string name="kline_five_min">5 นาที</string>
+    <string name="kline_ten_min">10 นาที</string>
+    <string name="kline_fifteen_min">15 นาที</string>
+    <string name="kline_thirty_min">30 นาที</string>
+    <string name="loading_data">กำลังโหลดข้อมูล...</string>
+
+    <string name="kline_buy">ซื้อ</string>
+    <string name="kline_sell">ขาย</string>
+    <string name="kline_price">ราคา</string>
+    <string name="committee_amount">ปริมาณ</string>
+    <string name="unit_price">ราคาต่อหน่วย</string>
+    <string name="kline_time">เวลา</string>
+    <string name="kline_trading_volume">อัตราการซื้อขาย</string>
+    <string name="kline_boll">BOLL</string>
+    <string name="kline_vol">VOL</string>
+    <string name="kline_macd">MACD</string>
+    <string name="kline_kdj">KDJ</string>
+    <string name="kline_rsi">RSI</string>
+    <string name="kline_transaction">ซื้อขายสุทธิ</string>
+    <string name="kline_current_item_info_high">สูงสุด</string>
+    <string name="kline_current_item_info_low">ต่ำที่สุด</string>
+    <string name="kline_current_item_info_open">การเปิด</string>
+    <string name="kline_current_item_info_close">ปิด</string>
+    <string name="kline_current_item_info_vol">ปริมาณ</string>
+    <string name="kline_current_item_info_limit">Ups และดาวน์</string>
+    <string name="kline_current_item_info_ma5">MA5</string>
+    <string name="kline_current_item_info_ma10">MA10</string>
+    <string name="kline_current_item_info_ma30">MA30</string>
+    <string name="kline_current_item_info_ma60">MA60</string>
+
+
+    <!-- 我的 -->
+    <string name="register">การลงทะเบียน</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="authenticated">ได้รับการรับรอง</string>
+    <string name="go_authenticate">ไปที่การรับรอง</string>
+    <string name="security_reminder">กรุณาอย่าเปิดเผยรหัสผ่านและรหัสยืนยัน อีเมลและข้อมูลใดๆให้กับคนอื่น.</string>
+    <string name="mine_invitation">คำเชิญของฉัน</string>
+    <string name="mine_earnings">รายได้จากแพลตฟอร์ม</string>
+    <string name="mine_authentication">การรับรองชื่อจริง</string>
+    <string name="mine_security">ศูนย์รักษาความปลอดภัย</string>
+    <string name="mine_setting">จัดตั้งขึ้น</string>
+    <string name="mine_help">ศูนย์ช่วยเหลือ</string>
+    <string name="register_count">จำนวนคนจดทะเบียน</string>
+    <string name="authenticated_count">จำนวนคนที่ได้การรับรอง</string>
+    <string name="mine_promote_links">ลิงก์โปรโมชันของฉัน</string>
+    <string name="mine_copy_links">คัดลอกลิงก์</string>
+    <string name="mine_quick_mark">รหัส QR ของฉันโปรโมชัน</string>
+    <string name="mine_save_quick_mark">บันทึกQRโค้ด</string>
+    <string name="start_authenticate">เริ่มการรับรอง</string>
+    <string name="identity_authentication">การตรวจสอบเอกลักษณ์</string>
+    <string name="authenticate_title">ประกาศเกี่ยวกับเรื่องเปิดใช้แพลตฟอร์มซื้อขายในเดือนพฤษภาคม</string>
+    <string name="authenticate_des">ระบบชื่อจริงสอดคล้องกับมาตรฐานป้องกันการฟอกเงิน ระบบชื่อจริงใหม่จะป้องกันการฟอกเงินที่ผิดกฎหมาย และผู้ใช้ที่ยังไม่บรรลุนิติภาวะโดยอัตโนมัติออกจากสกุลเงินเสมือนและธนาคารมีภาระผูกพันป้องกันการฟอกเงินซึ่งจะต้องให้พวกเขาในการตรวจสอบการเก็บบันทึกการทำธุรกรรมและการเข้ารหัสผู้ค้าสกุลเงิน . \ n ในระบบการตรวจสอบชื่อจริงบางส่วนของใบอนุญาตประกอบธุรกิจที่ไม่ถูกต้องตามกฎหมายไม่มีการตรวจสอบชื่อจริงของธนาคาร ได้รับการยอมรับแลกเปลี่ยนพื้นที่ใช้สอยจะหายไป. \ n แน่นอนแพลตฟอร์มการซื้อขายจำนวนมากได้รับการตระหนักถึงแนวโน้มนี้และที่มีอยู่แล้ว การดำเนินงานของกลไกการตรวจสอบชื่อจริง. เช่น idcm.io กระบวนการลงทะเบียนผู้ใช้จะต้องระบุชื่อที่ถูกต้องตามประจำตัวประชาชนหรือหนังสือเดินทางและเอกสารที่ถูกต้องอื่น ๆ แต่ยังอยู่ในความถูกต้องของเอกสารเหล่านี้ได้รับการตรวจสอบเพื่อให้แน่ใจว่าพฤติกรรมการซื้อขายของแพลตฟอร์มรวม การปฏิบัติตามกฎหมาย. \ n ระบบชื่อจริงสอดคล้องกับมาตรฐานป้องกันการฟอกเงิน ระบบชื่อจริงใหม่จะป้องกันการฟอกเงินที่ผิดกฎหมายและผู้ใช้ที่ยังไม่บรรลุนิติภาวะสกุลเงินเสมือนโดยอัตโนมัติกรองและธนาคารมีภาระผูกพันป้องกันการฟอกเงินซึ่งจะต้องให้พวกเขาที่จะตรวจสอบและเก็บรักษาการซื้อขายสกุลเงินเข้ารหัส บ</string>
+    <string name="nationality">สัญชาติ:</string>
+    <string name="real_name">ชื่อจริง:</string>
+    <string name="real_name2">ชื่อจริง</string>
+    <string name="china">ประเทศจีน(China)</string>
+    <string name="certificate_type">เอกสาร:</string>
+    <string name="select_certificate_type">กรุณาเลือกชนิดของเอกสาร</string>
+    <string name="certificate_number">หมายเลข:</string>
+    <string name="input_certificate_number">หมายเลขประจำตัว</string>
+    <string name="Identity_Recognition">ข้อมูลส่วนตัว:</string>
+    <string name="full_face_photo">ถ่ายบัตรรูปหน้า</string>
+    <string name="reverse_face_photo">ถ่ายบัตรรูปหลัง</string>
+    <string name="submit">เสนอ</string>
+    <string name="identity_authentication_reminder">คำแนะนำ \n 1.ความต้องการของภาพ: jpg / png รูปแบบขนาดไม่เกิน4M  รูปภาพต้องชัดเจน \n * 2.กรุณาอัปโหลดรูปภาพหลังบัตรประชาชนบัตร[มือจับ]รับรองบัตรประจำตัวประชาชนของคุณเพื่อให้แน่ใจว่าข้อมูลทั้งหมดในบัตรประจำตัวนั้นชัดเจน
+ไม่อนุญาตให้มีการดัดแปลงหรือแก้ไข มิฉะนั้นจะมีผลกับข้อมูลประจำตัวของคุณ  \n 3.ลงทะเบียนล้มเหลว กรุณาส่งอีกครั้งตามคำแนะนำ \n 4.ต้องเป็นเอกสารภายในระยะเวลาที่กำหนด</string>
+    <string name="authentication_reviewing">ระหว่างการตรวจสอบ</string>
+    <string name="withdrawal_reviewing">อยู่ระหว่างการตรวจสอบ</string>
+    <string name="authentication_success">การตรวจสอบสิทธิ์ที่ประสบความสำเร็จ</string>
+    <string name="authentication_fail">การตรวจสอบตัวตนล้มเหลว</string>
+    <string name="identity_state_reviewing_des">เอกสารข้อมูลประจำตัวของคุณได้รับการส่งไปยังแพลตฟอร์มเรียบร้อยแล้วแพลตฟอร์มนี้อยู่ภายใต้การตรวจสอบต่อไปโปรดอดทนรอและรอผลการรีวิวขอขอบคุณสำหรับการสนับสนุนและความร่วมมือของคุณ.</string>
+    <string name="reviewing_name">นามสกุล\u3000\u3000ชื่อ：</string>
+    <string name="reviewing_number">หมายเลขประจำตัว：</string>
+    <string name="reviewing_type">ประเภทเอกสาร：</string>
+    <string name="reviewing_fail_reason">เหตุผลของความล้มเหลว</string>
+    <string name="reviewing_fail_reason_one">1、ภาพของเอกสารไม่ชัดเจน</string>
+    <string name="reviewing_fail_reason_tow">2、ระยะเวลาของเอกสารถูกต้อง</string>
+    <string name="reviewing_fail_reason_three">3、ข้อผิดพลาดเกี่ยวกับรูปแบบเอกสาร</string>
+    <string name="authenticate_retry">รับรองใหม่</string>
+    <string name="help_center">ศูนย์ช่วยเหลือ</string>
+    <string name="contact_us">ติดต่อเรา</string>
+    <string name="about_us">เกี่ยวกับเรา</string>
+    <string name="information_announcement">การเปิดเผยข้อมูล</string>
+    <string name="industry_news">ข้อมูลอุตสาหกรรม</string>
+    <string name="FAQ">คำถามที่พบบ่อย</string>
+    <string name="articles_of_law">ข้อกำหนดทางกฎหมาย</string>
+    <string name="articles">ข้อตกลงและเงื่อนไข</string>
+    <string name="touch_id">นิ้ว\u3000\u3000เมล็ดข้าว</string>
+    <string name="set_language">การตั้งค่าภาษา</string>
+    <string name="about_version">เกี่ยวกับรุ่น</string>
+    <string name="logout">ออกจากระบบ</string>
+    <string name="app_copyright">\@2018dce.cash All Rights Reserved</string>
+    <string name="sure">ยืนยัน</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="touch_id_open_success">แตะ IDหัน！</string>
+    <string name="exit_app_des">หลังจากออกจาก DCE การตั้งค่าก่อนหน้าจะถูกเปลี่ยนกลับไปใช้ตัวเลือกเริ่มต้นแล้วตกลงเพื่อออกหรือไม่?</string>
+    <string name="safety_canter">ศูนย์รักษาความปลอดภัย</string>
+    <string name="phone_verify">การยืนยันโทรศัพท์มือถือ</string>
+    <string name="mail_verify">การยืนยันอีเมล</string>
+    <string name="google_verify">การยืนยันด้วย Google</string>
+    <string name="go_setting">ไปที่ชุด</string>
+    <string name="change_pwd">แก้ไขรหัสผ่านเข้าสู่ระบบ</string>
+    <string name="safety_remind_title">เคล็ดลับ</string>
+    <string name="safety_remind_des">เพื่อความปลอดภัยของทรัพย์สินของคุณคุณไม่สามารถปิดวิธีการยืนยันเมื่อคุณผูกเฉพาะวิธีการรับรองความถูกต้องเท่านั้นขอขอบคุณสำหรับความร่วมมือของคุณ!</string>
+    <string name="safety_remind_sure">ฉันรู้</string>
+    <string name="change_pwd_remind">คำแนะนำ: สำหรับการรักษาความปลอดภัยทรัพย์สินของคุณห้ามถอนเหรียญภายใน 24 ชั่วโมงหลังจากแก้ไขรหัสผ่านเข้าสู่ระบบ</string>
+    <string name="old_pwd">รหัสผ่านเก่า</string>
+    <string name="new_pwd">รหัสผ่านใหม่</string>
+    <string name="confirmed_new_pwd">ยืนยันรหัสผ่าน</string>
+    <string name="change_pwd_success">เปลี่ยนรหัสผ่านเรียบร้อยแล้ว！</string>
+    <string name="google_verify_first_des">ขั้นตอนที่ 1: ดาวน์โหลด แอปพลิเคชัน Google</string>
+    <string name="google_verify_first_des1">เข้าสู่ Android เพื่อดาวน์โหลดแอปพลิเคชัน Google  \n เข้าสู่ AppStore และพิมพ์ "Google Authenticator" เพื่อดาวน์โหลดแอปพลิเคชัน Google</string>
+    <string name="google_verify_second_des">ขั้นตอนที่ 2: ใช้แอปพลิเคชัน Google สแกนรหัส QRโค้ด หรือกรอกรหัสกุญแจ</string>
+    <string name="google_verify_third_des">ขั้นตอนที่ 3: ผูกมัดกับ แอปพลิเคชัน Google</string>
+    <string name="open_google_verify">เปิดการยืนยันของ Google</string>
+    <string name="keys">สำคัญ：</string>
+    <string name="google_key_remind">หากคุณไม่สามารถสแกนโค้ด QR ได้คุณสามารถป้อนรหัส 16 หลักลงในแอป Google Verified ด้วยตนเองได้</string>
+    <string name="google_key">รหัสยืนยันของ Google:</string>
+    <string name="google_key_hint">โปรดป้อนรหัสยืนยัน Google ของคุณ</string>
+    <string name="google_verify_success">\u3000\u3000\u3000ขอแสดงความยินดีกับการเชื่อมโยงที่ประสบความสำเร็จกับ Google Verified！</string>
+    <string name="google_verify_fail">ข้อผิดพลาดของรหัสยืนยัน \n กรุณาป้อนใหม่!</string>
+
+
+
+
+    <string name="get_verification_code">รับรหัสยืนยัน</string>
+    <string name="bind">ผูกพัน</string>
+    <string name="please_input_mail">โปรดป้อนที่อยู่อีเมลสำหรับยืนยัน</string>
+    <string name="please_input_phone">โปรดป้อนโทรศัพท์ยืนยัน</string>
+    <string name="please_input_mail_remind">* อีเมลที่ผ่านการรับรองแล้วอาจถูกระบุผิดว่าเป็นจดหมายขยะ กรุณาเช็คเพื่อตรวจสอบ</string>
+    <string name="please_input_phone_remind">*รหัสยืนยันการรับรองอาจระบุผิดพลาดว่าเป็นข้อความสั้น ๆ ที่เป็นขยะโปรดตรวจสอบ</string>
+    <string name="please_input_verification_code">โปรดป้อนรหัสยืนยัน</string>
+    <string name="select_market">เลือกตลาด</string>
+    <string name="select_coin">เลือกประเภทสกุลเงิน</string>
+    <string name="network_errors">ข้อผิดพลาดเกี่ยวกับเครือข่าย</string>
+    <string name="all">ทั้งหมด</string>
+    <string name="historic_records">ประวัติศาสตร์</string>
+    <string name="guidance_first">ความปลอดภัย ความมั่นคง ประสิทธิภาพสูง  n แลกเปลี่ยนเงินตราดิจิตอล</string>
+    <string name="guidance_second">ให้ความปลอดภัยยืนยันแบบหลายมิติสำหรับบัญชีของคุณ  \n</string>
+    <string name="guidance_third">บริการตอบสนองการแลกเปลี่ยนแบบมืออาชีพตลอด 24 ชั่วโมง</string>
+    <string name="guidance_third_skip_des">DCE เปิดการท่องเที่ยว</string>
+    <string name="skip">กระโดด</string>
+    <string name="skip_oax">DCE เปิดการท่องเที่ยว</string>
+
+    <!-- 网络 -->
+    <string name="http_clickretry">คลิกลองอีกครั้ง</string>
+    <string name="http_check">โปรดตรวจสอบสถานะเครือข่าย</string>
+    <string name="network_request_failed">คำขอเครือข่ายล้มเหลว</string>
+    <string name="http_network_errer">เครือข่ายของคุณสูญหาย~</string>
+    <string name="http_server_errer">ข้อยกเว้นของเซิร์ฟเวอร์</string>
+    <string name="help_detail">ช่วย</string>
+    <string name="kline_committee">สั่งซื้อสุทธิ</string>
+    <string name="http_userid_isempty">ไม่พบรหัสโปรดเข้าสู่ระบบอีกครั้งและลองอีกครั้ง!</string>
+    <string name="to_login_go">โปรดไปที่เข้าสู่ระบบและลองอีกครั้ง!</string>
+    <string name="PERMISSION_NO_SDK">"ไม่มีสิทธิ์อ่านและเขียนการ์ด SD \n ไปที่การตั้งค่า?"</string>
+
+    <!-- 复制保存  -->
+    <string name="success">สำเร็จ</string>
+    <string name="copy_success">คัดลอกสำเร็จ</string>
+    <string name="save_success">บันทึกเรียบร้อยแล้ว</string>
+    <string name="save_failure">บันทึกล้มเหลว</string>
+    <string name="total_price">ราคารวม</string>
+    <string name="please_input_price">โปรดป้อนราคาก่อน</string>
+    <string name="please_input_volume">โปรดป้อนจำนวนก่อน</string>
+    <string name="volume_can_not_be_zero">ปริมาณต้องเป็นศูนย์</string>
+    <string name="price_can_not_be_zero">ราคาต้องเป็นศูนย์</string>
+    <string name="high_24H">สูงสุด 24 ชม</string>
+    <string name="low_24H">ต่ำสุด 24 ชั่วโมง</string>
+    <string name="volume_24H">มูลค่าการซื้อขาย 24 ชั่วโมง</string>
+    <string name="limit_24H">ราคา ขึ้นและลง 24ชั่วโมง</string>
+    <string name="newest_price">ราคาใหม่ล่าสุด: </string>
+    <string name="newest_limit">ราคาขึ้น: </string>
+
+
+    <!-- 实名认证 -->
+    <string name="authenticate_shz">ระหว่างการตรวจสอบ</string>
+    <string name="crad">บัตรประชาชน</string>
+    <string name="passport">หนังสือเดินทาง</string>
+    <string name="permissions">ใบอนุญาต</string>
+    <string name="permissions_show">ในการตั้งค่า - แอ็พพลิเคชั่น - เสือ sniff - สิทธิ์ให้เปิดกล้อง, การเก็บข้อมูลสิทธิ์, เพื่อที่จะใช้กล้องถ่ายรูปหรือฟังก์ชั่นการเลือกภาพ</string>
+    <string name="go_setting_hint">ไปที่ชุด</string>
+    <string name="pictures">ถ่ายภาพ</string>
+    <string name="choose_photos">เลือกรูปภาพ</string>
+
+    <string name="not_through">อนุมัติล้มเหลว</string>
+    <string name="unauthorized">ยังไม่ได้รับรอง</string>
+    <string name="to_audit">รอการอนุมัติ</string>
+    <string name="approved">การอนุมัติผ่าน</string>
+
+    <string name="please_login">กรุณาเข้าสู่ระบบก่อน</string>
+    <!-- 网易滑块 -->
+    <string name="captcha_sdk_errer">พารามิเตอร์ SDK รหัสยืนยันถูกตั้งค่าอย่างไม่ถูกต้องโปรดตรวจสอบการตั้งค่า</string>
+    <string name="captcha_successful">การทดสอบที่ประสบความสำเร็จ</string>
+    <string name="captcha_failure">ข้อผิดพลาดในการตรวจสอบ</string>
+    <string name="tip_loading">กำลังโหลดโปรดรอสักครู่...</string>
+    <string name="tip_no_network">เครือข่ายผิดปกติโปรดตรวจสอบเครือข่ายและลองอีกครั้ง</string>
+    <string name="tip_validate_timeout">ตรวจสอบการหมดเวลาโปรดปิดและตรวจสอบเครือข่าย</string>
+    <string name="tip_init_timeout">การเริ่มต้นใช้งานหมดเวลาโปรดปิดและตรวจสอบเครือข่าย</string>
+    <string name="tip_load_failed">ไม่สามารถโหลดรหัสยืนยันได้</string>
+    <string name="kline_ma">MA</string>
+
+    <string name="clean_successful">ลบเรียบร้อยแล้ว</string>
+    <string name="unknown">ไม่ทราบ</string>
+
+    <string name="please_market_show_hint">กรุณาเลือกตลาดก่อน</string>
+    <string name="publisher">สำนักพิมพ์: DCE อย่างเป็นทางการ</string>
+    <string name="no_data_available">ยังไม่มีข้อมูล</string>
+
+    <string name="search_hint">กรุณาป้อนรายการเพื่อค้นหาคำหลัก</string>
+
+    <string name="user_agreement">ข้อตกลงของผู้ใช้</string>
+
+    <string name="dialog_lv">การแนะนำระดับ</string>
+    <string name="lv_1">Lv1: จำนวนที่ถอนได้ในแต่ล่ะวันเป็น%1$sBTC</string>
+    <string name="lv_2">Lv2: จำนวนที่ถอนได้ในแต่ล่ะวันเป็น%1$sBTC</string>
+    <string name="lv_3">Lv3: หากต้องการถอนมากกว่านั้นกรุณาติดต่อฝ่ายบริการลูกค้า</string>
+
+    <string name="connect_server_fail">การเชื่อมต่อกับเซิร์ฟเวอร์ล้มเหลว</string>
+
+    <string name="no_market_data">ไม่มีสกุลเงินที่โปรดปราน</string>
+
+    <!--红包-->
+    <string name="fa_red">发红包</string>
+    <string name="red_ordinary">普通红包</string>
+    <string name="red_luck">拼手气红包</string>
+    <string name="red_select_market">选择币种</string>
+    <string name="red_a_single_market">单个币数</string>
+    <string name="red_envelope_market">红包个数</string>
+    <string name="red_add_count">填写个数</string>
+    <string name="red_a">个</string>
+    <string name="red_hint_count_same">每人领到币数相同</string>
+    <string name="red_hint_count_random">每人领到币数随机</string>
+    <string name="red_banner">จำนวนเงิน：</string>
+    <string name="red_envelope_count">红包个数</string>
+    <string name="red_gxfc">红包一甩，别墅靠海！</string>
+    <string name="red_set_ordinary">塞币进红包</string>
+    <string name="red_problem">遇到问题</string>
+    <string name="red_hint_show">未领取的红包，将于24小时后退回账户</string>
+    <string name="red_sum_count">总币数</string>
+    <string name="set_red">发出的红包</string>
+    <string name="get_red">领取的红包</string>
+    <string name="red_help">遇到问题</string>
+    <string name="red_help_1">问题1: 发红包的额度以及笔数限制</string>
+    <string name="red_help_2">单个红包（包括普通红包和拼手气红包）限额200个，每次最多发100个红包。单日余额发红包最高币数10万个。若达到限制，请次日再试。</string>
+    <string name="red_help_3">问题2: 发出的红包能不能撤销？</string>
+    <string name="red_help_4">若分享的平台支持消息撤回，则可撤回红包。</string>
+    <string name="red_help_5">问题3: 如何处理未被领完的红包？</string>
+    <string name="red_help_6">未被领完的红包，在24小时之后将自动退回到账户余额，可在【资产】>【历史记录】中查看记录。</string>
+    <string name="red_help_7">问题4: 未成功分享到第三方平台，币却被扣了？</string>
+    <string name="red_help_8">如果红包未成功分享到第三方平台，币却被扣了，在24小时之后将自动退回到账户余额。在发红包页面点击右上角【发出的红包】，找到该红包记录，点击进详情页面，可继续分享此红包。</string>
+    <string name="red_service">联系客服(公众号) : weblacksheep</string>
+
+    <string name="red_send">发出的红包</string>
+    <string name="red_receive">收到的红包</string>
+    <string name="red_send_sum_set">共发出</string>
+    <string name="red_send_sum_get">共领取</string>
+    <string name="red_receive_sum_hint">以当时领取红包的估值为准</string>
+    <string name="red_send_sum_hint">以当时发送红包的估值为准</string>
+    <string name="red_send_count">发出0个红包</string>
+    <string name="red_receive_count">收到0个红包</string>
+
+    <string name="red_share_get">选择要分享的平台</string>
+    <string name="red_share_wx">微信好友</string>
+    <string name="red_share_wxpyq">朋友圈</string>
+    <string name="red_share_qq">QQ</string>
+    <string name="red_share_dd">钉钉</string>
+    <string name="red_share_copy_url">复制链接</string>
+
+    <string name="red_oax">DCE红包</string>
+    <string name="red_oax_share_success">分享成功</string>
+    <string name="red_oax_banner">剩余币数</string>
+    <string name="red_oax_next">继续发送此红包</string>
+
+    <string name="red_ylq">已领取</string>
+    <string name="red_oax_hint_show">已领取0/0个红包，共0/0BTC</string>
+
+    <string name="red_errer_hint_show">一次红包币数不可超过0个</string>
+
+    <!--平台收益-->
+    <string name="earnings_overview">总览</string>
+    <string name="my_earnings">我的收益</string>
+    <string name="total_feedback">回馈累计</string>
+    <string name="total_bonus">分红累计</string>
+    <string name="yesterday_feedback">昨日回馈收益折合</string>
+    <string name="today_FeedBack_Sum">今日待分配收入折合</string>
+    <string name="today_Compensation_FeedBack">今日补偿待分配收入折合</string>
+    <string name="today_Trade_FeedBack">今日交易待分配收入折合</string>
+    <string name="today_million_FeedBack">今日持有X每百万份收入折合</string>
+    <string name="thursday_trade_feedback">本周四累积待分配折合</string>
+    <string name="weekday_trade_feedback">本周日累积待分配折合</string>
+    <string name="x_token_circulation_total">X-token流通市值</string>
+    <string name="x_token_circulation_market_value">X-token流通总量</string>
+    <string name="x_token_total_market_value">X-token总市值</string>
+    <string name="x_token_total">X-token总量</string>
+
+    <string name="name">ชื่อเต็ม</string>
+
+    <string name="trust_price">ราคา Commission</string>
+    <string name="trust_quantity">จำนวนค่าคอมมิชชั่น</string>
+
+    <string name="social_contract">ล่มสลาย</string>
+    <string name="social_expend">การขยายตัว</string>
+    <string name="social_text_target">เว็บลิงค์</string>
+    <string name="no_optional_str">ไม่มีการซื้อขายในตลาดปัจจุบันโปรดลองดึงลงและรีเฟรช</string>
+
+
+</resources>

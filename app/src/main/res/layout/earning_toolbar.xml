@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d90">
+
+        <RelativeLayout
+            android:id="@+id/ll_left"
+            android:layout_width="@dimen/d96"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/im_left"
+                android:layout_width="@dimen/dp44"
+                android:layout_height="@dimen/dp44"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/fh_arows_icon" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/mine_earnings"
+            android:textColor="@color/df_font"
+            android:textSize="@dimen/d36" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/d20"
+            android:paddingRight="@dimen/d20"
+            android:text="@string/earnings_overview"
+            android:textColor="@color/df_gray_666"
+            android:textSize="@dimen/d32" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/split_line" />
+
+</LinearLayout>

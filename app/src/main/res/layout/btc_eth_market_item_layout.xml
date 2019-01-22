@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mian_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/d30"
+        android:paddingRight="@dimen/d30">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <RelativeLayout
+                android:id="@+id/rl_zx"
+                android:layout_width="@dimen/dp34"
+                android:layout_height="@dimen/dp34"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_collection"
+                    android:layout_width="@dimen/dp14"
+                    android:layout_height="@dimen/dp13"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/kline_collect_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp24"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_market_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---/---"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d26" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_market_name"
+                        android:layout_marginTop="@dimen/d10">
+
+                        <TextView
+                            android:id="@+id/market_item_liang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/home_qty"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d22" />
+
+                        <TextView
+                            android:id="@+id/tv_market_qty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/market_item_liang"
+                            android:layout_toRightOf="@+id/market_item_liang"
+                            android:text="----"
+                            android:textColor="@color/df_gray_666"
+                            android:textSize="@dimen/d22" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_left_coin_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/d26" />
+
+                    <TextView
+                        android:id="@+id/tv_cny_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/d10"
+                        android:text="≈￥---"
+                        android:textColor="@color/df_gray_666"
+                        android:textSize="@dimen/d22" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/bt_applies"
+                    android:layout_width="@dimen/dp84"
+                    android:layout_height="@dimen/dp34"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_incrate_red_bg">
+
+                    <TextView
+                        android:id="@+id/tv_incRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="---%"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/d24" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

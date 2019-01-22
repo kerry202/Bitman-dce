@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp44">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:srlEnableAutoLoadMore="false"
+            app:srlEnableLoadMore="false"
+            app:srlEnableLoadMoreWhenContentNotFull="false">
+
+            <cn.dagongniu.bitman.customview.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/df_F8F8F8"
+                app:srlClassicsSpinnerStyle="FixedBehind"
+                app:srlDrawableArrowSize="15dp"
+                app:srlDrawableMarginRight="15dp"
+                app:srlDrawableProgress="@drawable/ic_progress_puzzle_1"
+                app:srlDrawableProgressSize="20dp"
+                app:srlEnableLastTime="true"
+                app:srlFinishDuration="500"
+                app:srlTextSizeTime="10dp"
+                app:srlTextSizeTitle="14dp"
+                app:srlTextTimeMarginTop="2dp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/add_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginTop="@dimen/d20"
+                android:layout_marginRight="@dimen/d30" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/df_theme_bg_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp44"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/add_address"
+            android:drawablePadding="@dimen/dp10"
+            android:gravity="center"
+            android:text="@string/assets_add"
+            android:textColor="@color/home_tj_color2"
+            android:textSize="@dimen/dp16" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/assets_no_add"
+        android:textColor="@color/df_999999"
+        android:textSize="@dimen/d30" />
+
+</RelativeLayout>

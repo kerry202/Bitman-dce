@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <cn.dagongniu.bitman.bitmanviews.starsky.StarSkyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1a1d1c"
+        android:visibility="visible"
+        app:meteor_head_size="3"
+        app:one_cycle_time_ms="50000"
+        app:star_nums="20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="65dp"
+                        android:layout_height="56dp">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:src="@drawable/text_circle" />
+
+                        <TextView
+                            android:id="@+id/user_grade"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/text_circle_bule"
+                            android:gravity="center"
+                            android:text="矿主"
+                            android:textColor="@color/bule5"
+                            android:textSize="11dp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"
+                            android:textColor="@color/bule6"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/user_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="ID:"
+                            android:textColor="@color/bule6"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="18dp"
+                            android:background="@mipmap/lang_bg"
+                            android:gravity="center"
+                            android:text="中文"
+                            android:textColor="@color/bule6"
+                            android:textSize="9dp" />
+
+                        <TextView
+                            android:layout_width="47dp"
+                            android:layout_height="18dp"
+                            android:gravity="center"
+                            android:text="EN"
+                            android:textColor="@color/bule6"
+                            android:textSize="9dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/user_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="15dp"
+                        android:drawableRight="@mipmap/bi_icon"
+                        android:drawablePadding="9dp"
+                        android:gravity="center_vertical"
+                        android:text="0"
+                        android:textColor="@color/bule5"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp"
+                android:background="@mipmap/details_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/star_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:text="Earth"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="residual reserves"
+                        android:textColor="@color/bule4"
+                        android:textSize="9dp" />
+
+                    <TextView
+                        android:id="@+id/star_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:drawableLeft="@mipmap/min_bi_icon"
+                        android:drawablePadding="6dp"
+                        android:text="0.00"
+                        android:textColor="@color/bule4"
+                        android:textSize="9dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent">
+
+
+                <TextView
+                    android:id="@+id/des_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Tip:click the energy pool to deposit/receive COINS"
+                    android:textColor="@color/bule4"
+                    android:textSize="11dp" />
+
+                <LinearLayout
+                    android:id="@+id/home_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="2">
+
+                        <cn.dagongniu.bitman.bitmanviews.CircleProgressView
+                            android:id="@+id/wa_kmin"
+                            android:layout_width="81dp"
+                            android:layout_height="81dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:progress="0"
+                            app:progressReachColor="@color/bule2"
+                            app:progressStyle="FillInnerArc"
+                            app:radius="40dp" />
+
+                        <TextView
+                            android:id="@+id/throw_min_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wa_kmin"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/bule4"
+                            android:textSize="9dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/throw_min_times"
+                            android:layout_centerHorizontal="true"
+                            android:text="倒计时"
+                            android:textColor="@color/bule4"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/throw_min"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="throw:0"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/throw_min_tv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="To :"
+                                android:textColor="@color/yellow5"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:id="@+id/thorows_min_put_tv1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/yellow5"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <cn.dagongniu.bitman.bitmanviews.CircleProgressView
+                                android:id="@+id/wa_kzho"
+                                android:layout_width="81dp"
+                                android:layout_height="81dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="@dimen/dp10"
+                                android:progress="0"
+                                app:progressReachColor="@color/bule2"
+                                app:progressStyle="FillInnerArc"
+                                app:radius="40dp" />
+
+                            <TextView
+                                android:id="@+id/throw_zho_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/wa_kzho"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/bule4"
+                                android:textSize="9dp"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/throw_zho_times"
+                                android:layout_centerHorizontal="true"
+                                android:text="倒计时"
+                                android:textColor="@color/bule4"
+                                android:textSize="9dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/throws_zho"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="throw:0"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/throw_zho_tv2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="To :"
+                                    android:textColor="@color/yellow5"
+                                    android:textSize="9dp" />
+
+                                <TextView
+                                    android:id="@+id/thorows_zho_put_tv2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="0.00"
+                                    android:textColor="@color/yellow5"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/wa_kzho2"
+                            android:layout_width="77dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="21dp"
+                            android:background="@mipmap/throws_icon" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="2">
+
+                        <cn.dagongniu.bitman.bitmanviews.CircleProgressView
+                            android:id="@+id/wa_kmax"
+                            android:layout_width="81dp"
+                            android:layout_height="81dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:progress="0"
+                            app:progressReachColor="@color/bule2"
+                            app:progressStyle="FillInnerArc"
+                            app:radius="40dp" />
+
+                        <TextView
+                            android:id="@+id/throw_max_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wa_kmax"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/bule4"
+                            android:textSize="9dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/throw_max_times"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:text="倒计时"
+                            android:textColor="@color/bule4"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/throws_max"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="throw:0"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/throw_max_tv3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="To :"
+                                android:textColor="@color/yellow5"
+                                android:textSize="9dp" />
+
+                            <TextView
+                                android:id="@+id/thorows_max_put_tv3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0.00"
+                                android:textColor="@color/yellow5"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/home_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/home_ll" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </cn.dagongniu.bitman.bitmanviews.starsky.StarSkyView>
+
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <cn.dagongniu.bitman.customview.MyTradingToolbar
+        android:id="@+id/mytrading_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp57"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_simplified_chinese"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp57"
+            android:background="@drawable/lib_white_circle"
+            android:clickable="true">
+
+
+            <TextView
+                android:id="@+id/tv_simplified_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/setting_simplified_chinese"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_simplified_chinese"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@mipmap/language_select"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp57"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_english"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp57"
+            android:background="@drawable/lib_white_circle"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/setting_language_english"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_english"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@mipmap/language_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp57"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_ft_china"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp57"
+            android:background="@drawable/lib_white_circle"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_ft_china"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/setting_traditional_chinese"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_ft_china"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@mipmap/language_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp57"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_ty_lang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp57"
+            android:background="@drawable/lib_white_circle"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_ty_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/setting_traditional_ty"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/iv_ty_lang"
+                android:layout_width="@dimen/dp14"
+                android:layout_height="@dimen/dp14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:src="@mipmap/language_select"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

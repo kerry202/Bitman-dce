@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lib_white_circle"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp20"
+                android:drawableLeft="@mipmap/address_icon"
+                android:drawablePadding="@dimen/dp10"
+                android:text="@string/topup_address"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="297dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/f8_gray_circle"
+                android:gravity="center"
+                android:padding="@dimen/dp15"
+                android:text="#"
+                android:textColor="@color/df_999999"
+                android:textSize="@dimen/dp14" />
+
+            <Button
+                android:id="@+id/rl_copy_add"
+                android:layout_width="99dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/white_circle3"
+                android:gravity="center"
+                android:text="@string/assets_coyp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp11" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp15"
+        android:background="@drawable/shadow_circle"
+        android:padding="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lib_white_circle"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp20"
+                android:drawableLeft="@mipmap/qr_code_icon"
+                android:drawablePadding="@dimen/dp10"
+                android:text="@string/qr_code"
+                android:textColor="@color/df_font"
+                android:textSize="@dimen/dp15" />
+
+            <ImageView
+                android:id="@+id/im_code"
+                android:layout_width="@dimen/dp84"
+                android:layout_height="@dimen/dp84"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@color/df_F8F8F8"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/rl_save_img"
+                android:layout_width="99dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp15"
+                android:background="@drawable/white_circle3"
+                android:gravity="center"
+                android:text="@string/assets_coyp_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp11" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

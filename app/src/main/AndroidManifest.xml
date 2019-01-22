@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.dagongniu.bitman">
+
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <!-- 授予该程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.INTERACT_ACROSS_USERS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:name="cn.dagongniu.bitman.OAXApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/oax_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppNewTheme"
+        tools:replace="icon,label,theme">
+
+
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="8727111b01" />
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="2.0.2" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="Android" />
+        <!-- 配置Bugly调试模式（true或者false）-->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+
+        <!-- 自适应适配设置 -->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <service
+            android:name="cn.dagongniu.bitman.vpn.core.LocalVpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.factory.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/factory_provider_paths" />
+        </provider>
+        <!-- 存储路径7.0适配 end -->
+
+        <activity
+            android:name="cn.dagongniu.bitman.main.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 接收外部跳转 -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 表示该页面可以被隐式调用，必须加上该项 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 如果希望该应用可以通过浏览器的连接启动，则添加该项 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myoax"
+                    android:scheme="oax" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.dagongniu.bitman.bitmanviews.BitmanHomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.bitmanviews.BitmanThorwActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="cn.dagongniu.bitman.vpn.AppManager"
+            android:excludeFromRecents="true"
+            android:label="@string/proxied_apps"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.SetLanguageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.main.GuidanceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="cn.dagongniu.bitman.kline.KLinesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.dagongniu.bitman.kline.KLinesFullScreenActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="cn.dagongniu.bitman.main.WebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.dagongniu.bitman.zxing.CaptureActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.main.BannerWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.dagongniu.bitman.vpn.MainVpnActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.trading.MarketChooseActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.trading.EntrustOrderActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.main.AnnouncementMoreActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.WithTopRecordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.WithdTopSearchActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.WithdrawalActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.ADDAddressActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.my_ui.MyTopupCradActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.MineInvitationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.AuthenticateActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.IdentityAuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.AuthenticationStateActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.HelpActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.SettingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.VersionActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.OaxRegisteredActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.ForgetPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.SetPasswordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.SafetyActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.ChooseCountriesActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.main.SearchCoinActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.HelpDetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.AssetsDetailsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.GoogleVerifyActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.account.CommitMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.ChangeLoginPwdActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.VerifyActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.AgreementActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.RedEnvelopeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="cn.dagongniu.bitman.assets.RedHelpActivity" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.SendReceiveRedEnvelopeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.assets.OaxRedEnvelopeDetailsActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 分享配置 -->
+        <activity
+            android:name="cn.dagongniu.bitman.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.dagongniu.bitman.ddshare.DDShareActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="cn.dagongniu.bitman.assets.ShareSuccessActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="cn.dagongniu.bitman.account.EarningsActivity"
+            android:launchMode="singleTask" />
+
+
+        <activity
+            android:name="cn.dagongniu.bitman.account.EarningsOverviewActivity"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

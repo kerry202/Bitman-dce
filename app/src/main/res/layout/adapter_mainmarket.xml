@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="66dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/app_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d15"
+        android:paddingRight="@dimen/d15">
+
+
+        <TextView
+            android:id="@+id/tv_market_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--"
+            android:textColor="@color/df_gray_666"
+            android:textSize="@dimen/dp14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_left_coin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:gravity="center_horizontal"
+            android:text="--"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_applies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp2"
+            android:paddingLeft="@dimen/d05"
+            android:paddingRight="@dimen/d05"
+            android:text="--%"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp11" />
+
+        <TextView
+            android:id="@+id/tv_cny_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp2"
+            android:paddingLeft="@dimen/d05"
+            android:paddingRight="@dimen/d05"
+            android:text="≈¥--"
+            android:textColor="@color/df_font_hui"
+            android:textSize="@dimen/dp11" />
+    </LinearLayout>
+
+
+</RelativeLayout>

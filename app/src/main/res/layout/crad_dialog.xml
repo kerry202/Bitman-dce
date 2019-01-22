@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_circle2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center"
+        android:text="@string/dkdh_str"
+        android:textColor="@color/text_str"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="20dp"
+            android:text="@string/bi_zhong"
+            android:textColor="@color/df_999999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="币种"
+            android:textColor="@color/text_str"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="20dp"
+            android:text="@string/quantity_str"
+            android:textColor="@color/df_999999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/amout_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="币种"
+            android:textColor="@color/text_str"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="20dp"
+            android:text="@string/valid_until_str"
+            android:textColor="@color/df_999999"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="time"
+            android:textColor="#8B8B8B"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center"
+        android:text="@string/dec_str"
+        android:textColor="#8B8B8B"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Button
+            android:id="@+id/cancel_tv"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/dp34"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/white_circle"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/text_str"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/cenvert_tv"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/dp34"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/white_circle3"
+            android:gravity="center"
+            android:text="@string/exchange_str"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+</LinearLayout>

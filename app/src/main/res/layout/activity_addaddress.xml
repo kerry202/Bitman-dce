@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <cn.dagongniu.bitman.customview.MyTradingToolbar
+        android:id="@+id/add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.75"
+        app:srlEnableLoadMore="true"
+        app:srlEnablePureScrollMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp15"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_mian"
+                    android:layout_width="match_parent"
+                    android:layout_height="308dp"
+                    android:layout_below="@+id/withdrawal_toolbar"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/side_gray_circle"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp15">
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/home_tj_color2"
+                        android:textSize="@dimen/dp14" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp20">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_address"
+                            android:textColor="@color/df_font_hui"
+                            android:textSize="@dimen/dp14" />
+
+                        <TextView
+                            android:id="@+id/qr_scan_iv"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawableRight="@mipmap/scan_icon"
+                            android:drawablePadding="@dimen/dp5"
+                            android:text="@string/scan_str"
+                            android:textColor="@color/df_999999"
+                            android:textSize="@dimen/dp12" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d160"
+                        android:layout_marginTop="@dimen/d20"
+                        android:background="@drawable/f8_gray_circle">
+
+                        <EditText
+                            android:id="@+id/et_adderss"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginTop="@dimen/d10"
+                            android:layout_marginRight="@dimen/d30"
+                            android:layout_marginBottom="@dimen/d10"
+                            android:background="@null"
+                            android:digits="@string/filter_vcode"
+                            android:hint="@string/add_adderss"
+                            android:inputType="number"
+                            android:maxLength="64"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_999999"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/dp14" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d40"
+                        android:text="@string/assets_note"
+                        android:textColor="@color/df_font_hui"
+                        android:textSize="@dimen/dp14" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d120"
+                        android:layout_marginTop="@dimen/d20"
+                        android:background="@drawable/f8_gray_circle">
+
+                        <EditText
+                            android:id="@+id/et_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/d30"
+                            android:layout_marginTop="@dimen/d10"
+                            android:layout_marginRight="@dimen/d30"
+                            android:layout_marginBottom="@dimen/d10"
+                            android:background="@null"
+                            android:hint="@string/add_note"
+                            android:maxLength="15"
+                            android:textColor="@color/df_font"
+                            android:textColorHint="@color/df_999999"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/dp14" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/bt_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp49"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/d100"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/noclick_circle_gray"
+                android:text="@string/assets_yes_add"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp16" />
+
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
+

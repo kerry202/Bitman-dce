@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/rl_close"
+            android:layout_width="@dimen/dp44"
+            android:layout_height="@dimen/dp44"
+            android:src="@mipmap/fh_arows_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/entrust_order_ddsx"
+            android:textColor="@color/text_str"
+            android:textSize="@dimen/dp15" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/lib_white_circle"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/entrust_order_date"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp14" />
+
+        <cn.dagongniu.bitman.customview.RadioGroupEx
+            android:id="@+id/radiogroup_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_day"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_t"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp13" />
+
+            <RadioButton
+                android:id="@+id/rb_weeks"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_z"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp13" />
+
+            <RadioButton
+                android:id="@+id/rb_month"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_y"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp13" />
+
+            <RadioButton
+                android:id="@+id/rb_three_month"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_3y"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp13" />
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginTop="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_all"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp13" />
+
+        </cn.dagongniu.bitman.customview.RadioGroupEx>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/lib_white_circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/entrust_order_market"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp14" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_all_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_marketname"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp34"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/white_circle4"
+                android:gravity="center"
+                android:text="@string/entrust_order_bz"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp14" />
+
+
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="@dimen/dp20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp5"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/text_str"
+                android:textSize="@dimen/dp14" />
+
+            <TextView
+                android:id="@+id/tv_categoryname"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp34"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/white_circle4"
+                android:gravity="center"
+                android:text="@string/entrust_order_market"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp16"
+        android:background="@drawable/lib_white_circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="@string/entrust_order_lx"
+            android:textColor="@color/df_999999"
+            android:textSize="@dimen/dp14" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_lx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:columnCount="3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButton_buy_sell"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="30dp"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_buy_sell"
+                android:textColor="@color/text_str"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_buy"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_buy"
+                android:textColor="@color/text_str"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/RadioButton_sell"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/d30"
+                android:background="@drawable/radio_state_order_screening"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/entrust_order_sell"
+                android:textColor="@color/text_str"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp16"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rl_reset"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp36"
+            android:background="@drawable/lib_white_circle"
+            android:gravity="center"
+            android:text="@string/entrust_order_reset"
+            android:textColor="@color/text_str"
+            android:textSize="@dimen/dp17" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="@dimen/dp160"
+            android:layout_height="@dimen/dp36"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_circle4"
+            android:gravity="center"
+            android:text="@string/entrust_order_ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp17" />
+
+    </RelativeLayout>
+
+</LinearLayout>

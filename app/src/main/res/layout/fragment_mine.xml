@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:layout_marginLeft="@dimen/dp13"
+                android:layout_marginTop="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp13"
+                android:background="@mipmap/banner_bg"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:id="@+id/rl_head_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/all_gray_circle"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_unlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp43"
+                            android:layout_height="@dimen/dp43"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:src="@mipmap/user_icon" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_register"
+                                android:layout_width="120dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/white_circle3"
+                                android:gravity="center"
+                                android:text="@string/register"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tv_login"
+                                android:layout_width="120dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="@dimen/dp40"
+                                android:background="@drawable/lib_white_circle"
+                                android:gravity="center"
+                                android:text="@string/login"
+                                android:textColor="@color/black"
+
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/security_reminder"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp11" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/login_suoccss"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="91dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_head"
+                                android:layout_width="@dimen/dp43"
+                                android:layout_height="@dimen/dp43"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:src="@mipmap/user_icon" />
+
+                            <LinearLayout
+                                android:id="@+id/mine_login_user_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="91dp"
+                                android:layout_marginLeft="@dimen/dp23"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_user_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="---"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/d30" />
+
+                                <TextView
+                                    android:id="@+id/tv_user_uid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:text="UID:---"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/d24" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_authentication"
+                                        android:layout_width="55dp"
+                                        android:layout_height="16dp"
+                                        android:background="@drawable/white_circle3"
+                                        android:gravity="center"
+                                        android:text="@string/go_authenticate"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/d22" />
+
+                                    <TextView
+                                        android:id="@+id/tv_str"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/dp20"
+                                        android:text="@string/vip2_str"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/d22" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/iv_grade"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:layout_marginRight="@dimen/dp20"
+                            android:background="@mipmap/vip_icon1" />
+
+                        <TextView
+                            android:id="@+id/tv_security_reminder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp15"
+                            android:text="@string/security_reminder"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dp11" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginTop="@dimen/d30"
+                android:layout_marginRight="@dimen/dp14"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+                <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                    android:id="@+id/mine_invitation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp44"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/side_gray_circle"
+                    app:mine_is_show_split_line="false"
+                    app:mine_item_des="@string/mine_invitation"
+                    app:mine_item_icon="@mipmap/my_invitation_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginTop="@dimen/d30"
+                android:layout_marginRight="@dimen/dp14"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/side_gray_circle"
+                    android:orientation="vertical">
+
+                    <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                        android:id="@+id/mine_authentication"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        app:mine_item_des="@string/mine_authentication"
+                        app:mine_item_icon="@mipmap/earnings_icon" />
+
+                    <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                        android:id="@+id/mine_security"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        app:mine_is_show_split_line="false"
+                        app:mine_item_des="@string/mine_security"
+                        app:mine_item_icon="@mipmap/security_icon" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginTop="@dimen/d30"
+                android:layout_marginRight="@dimen/dp14"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/side_gray_circle"
+                    android:orientation="vertical">
+
+                    <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                        android:id="@+id/my_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        app:mine_item_des="@string/announcement_tz"
+                        app:mine_item_icon="@mipmap/msg_icon" />
+
+
+                    <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                        android:id="@+id/mine_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        app:mine_item_des="@string/mine_help"
+                        app:mine_item_icon="@mipmap/help_icon" />
+
+                    <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                        android:id="@+id/my_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp44"
+                        app:mine_is_show_split_line="false"
+                        app:mine_item_des="@string/commitMsg"
+                        app:mine_item_icon="@mipmap/my_upload_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp14"
+                android:layout_marginTop="@dimen/d30"
+                android:layout_marginRight="@dimen/dp14"
+                android:background="@drawable/shadow_circle"
+                android:padding="1dp">
+
+                <cn.dagongniu.bitman.account.view.MineFragmentItemView
+                    android:id="@+id/mine_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp44"
+                    android:background="@drawable/side_gray_circle"
+                    app:mine_is_show_split_line="false"
+                    app:mine_item_des="@string/mine_setting"
+                    app:mine_item_icon="@mipmap/set_icon" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_bg" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

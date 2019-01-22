@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <declare-styleable name="StarSkyView">
+
+        <!--最远的星星循环一次移动的时间，单位ms近点星星的移动速度默认是远星星的一般-->
+        <attr format="integer" name="one_cycle_time_ms" />
+
+        <!--远处星星的数量，近点星星和远点星星的数量是一致的-->
+        <attr format="integer" name="star_nums" />
+
+        <!--流星头部的尺寸-->
+        <attr format="integer|reference" name="meteor_head_size" />
+    </declare-styleable>
+
+
+    <attr format="dimension" name="progressTextSize"/>
+    <attr format="color" name="progressTextColor"/>
+    <attr format="dimension" name="progressTextOffset"/>
+    <attr format="color" name="progressNormalColor"/>
+    <attr format="color" name="progressReachColor"/>
+    <attr format="dimension" name="progressNormalSize"/>
+    <attr format="dimension" name="progressReachSize"/>
+    <attr format="dimension" name="progressReachWidth"/>
+    <attr format="dimension" name="progressNormalWidth"/>
+    <attr format="boolean" name="progressTextVisible"/>
+    <attr format="dimension" name="progressTextSkewX"/>
+    <attr format="string" name="progressTextPrefix"/>
+    <attr format="string" name="progressTextSuffix"/>
+    <attr format="color" name="innerBackgroundColor"/>
+
+    <declare-styleable name="HorizontalProgressView">
+        <attr name="progressNormalColor"/>
+        <attr name="progressReachColor"/>
+        <attr name="progressTextColor"/>
+        <attr name="progressTextSize"/>
+        <attr name="progressTextOffset"/>
+        <attr name="progressNormalSize"/>
+        <attr name="progressReachSize"/>
+        <attr format="enum" name="progressTextPosition">
+            <enum name="TOP" value="1"/>
+            <enum name="BOTTOM" value="-1"/>
+            <enum name="CENTER" value="0"/>
+        </attr>
+        <attr name="progressTextVisible"/>
+        <attr name="progressTextSkewX"/>
+        <attr name="progressTextPrefix"/>
+        <attr name="progressTextSuffix"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="progressNormalColor"/>
+        <attr name="progressReachColor"/>
+        <attr name="progressTextColor"/>
+        <attr name="progressTextSize"/>
+        <attr name="progressTextOffset"/>
+        <attr name="progressNormalSize"/>
+        <attr name="progressReachSize"/>
+        <attr format="dimension" name="radius"/>
+        <attr name="progressTextVisible"/>
+        <attr format="integer" name="progressStartArc"/>
+        <attr name="progressTextSkewX"/>
+        <attr name="progressTextPrefix"/>
+        <attr name="progressTextSuffix"/>
+        <attr name="innerBackgroundColor"/>
+        <attr format="enum" name="progressStyle">
+            <enum name="Normal" value="0"/>
+            <enum name="FillInner" value="1"/>
+            <enum name="FillInnerArc" value="2"/>
+        </attr>
+        <attr format="color" name="innerProgressColor"/>
+        <attr format="dimension" name="innerPadding"/>
+        <attr format="color" name="outerColor"/>
+        <attr format="dimension" name="outerSize"/>
+        <attr format="boolean" name="reachCapRound"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="left_to_right" value="3"/>
+        </attr>
+    </declare-styleable>
+
+
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CurrentItemInfoView">
+        <attr name="isFromFullScreen" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MineFragmentItemView">
+        <attr name="mine_item_icon" format="reference" />
+        <attr name="mine_item_des" format="string" />
+        <attr name="mine_is_show_split_line" format="boolean" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="OAXToolbar">-->
+    <!--<attr name="oax_toolbar_left_icon" format="reference" />-->
+    <!--<attr name="oax_toolbar_right_icon" format="reference" />-->
+    <!---->
+    <!--<attr name="oax_toolbar_left_des" format="string" />-->
+    <!--<attr name="oax_toolbar_right_des" format="string" />-->
+    <!--<attr name="oax_toolbar_center_des" format="string" />-->
+    <!---->
+    <!--<attr name="oax_toolbar_is_show_right_icon" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_left_icon" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_left_des" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_right_des" format="boolean" />-->
+    <!--<attr name="oax_toolbar_is_show_center_des" format="boolean" />-->
+
+    <!--<attr name="oax_toolbar_left_text_size" format="dimension" />-->
+    <!--<attr name="oax_toolbar_right_text_size" format="dimension" />-->
+    <!--<attr name="oax_toolbar_right_center_size" format="dimension" />-->
+    <!---->
+    <!---->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="KLineTabView">
+        <attr name="kline_tab_name" format="string" />
+        <attr name="kline_tab_select" format="boolean" />
+        <attr name="kline_tab_select_color" format="color" />
+        <attr name="kline_tab_un_select_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="BGABanner">
+        <!-- 指示点容器背景 -->
+        <attr name="banner_pointContainerBackground" format="reference|color"/>
+        <!-- 指示点背景 -->
+        <attr name="banner_pointDrawable" format="reference"/>
+        <!-- 指示点容器左右内间距 -->
+        <attr name="banner_pointContainerLeftRightPadding" format="dimension"/>
+        <!-- 指示点上下外间距 -->
+        <attr name="banner_pointTopBottomMargin" format="dimension"/>
+        <!-- 指示点左右外间距 -->
+        <attr name="banner_pointLeftRightMargin" format="dimension"/>
+        <!-- 指示器的位置 -->
+        <attr name="banner_indicatorGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="banner_pointAutoPlayAble" format="boolean"/>
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="banner_pointAutoPlayInterval" format="integer"/>
+        <!-- 页码切换过程的时间长度 -->
+        <attr name="banner_pageChangeDuration" format="integer"/>
+        <!-- 页面切换的动画效果 -->
+        <attr name="banner_transitionEffect" format="enum">
+            <enum name="defaultEffect" value="0"/>
+            <enum name="alpha" value="1"/>
+            <enum name="rotate" value="2"/>
+            <enum name="cube" value="3"/>
+            <enum name="flip" value="4"/>
+            <enum name="accordion" value="5"/>
+            <enum name="zoomFade" value="6"/>
+            <enum name="fade" value="7"/>
+            <enum name="zoomCenter" value="8"/>
+            <enum name="zoomStack" value="9"/>
+            <enum name="stack" value="10"/>
+            <enum name="depth" value="11"/>
+            <enum name="zoom" value="12"/>
+        </attr>
+        <!-- 提示文案的文字颜色 -->
+        <attr name="banner_tipTextColor" format="reference|color"/>
+        <!-- 提示文案的文字大小 -->
+        <attr name="banner_tipTextSize" format="dimension"/>
+        <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
+        <attr name="banner_placeholderDrawable" format="reference"/>
+        <!-- 是否是数字指示器 -->
+        <attr name="banner_isNumberIndicator" format="boolean"/>
+        <!-- 数字指示器文字颜色 -->
+        <attr name="banner_numberIndicatorTextColor" format="reference|color"/>
+        <!-- 数字指示器文字大小 -->
+        <attr name="banner_numberIndicatorTextSize" format="dimension"/>
+        <!-- 数字指示器背景 -->
+        <attr name="banner_numberIndicatorBackground" format="reference"/>
+        <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
+        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean"/>
+        <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
+        <attr name="banner_contentBottomMargin" format="dimension"/>
+        <!-- 宽高比例，如果大于 0，则会根据宽度来计算高度，否则使用 android:layout_height 指定的高度 -->
+        <attr name="banner_aspectRatio" format="float"/>
+        <!-- 占位图和资源图片缩放模式 -->
+        <attr name="android:scaleType"/>
+    </declare-styleable>
+
+</resources>
